@@ -8,7 +8,9 @@ export default function Section1 () {
         <div className="section">
             <div className="logo-inscreva">
                 <img src={Logo} alt="Logo PythonRio" className="logo1"/>
-                <Button texto='INSCREVA-SE' background='#48517C' backgroundTexto='#FCFCFA' width='230px' height="50px" fontsize="24px"/>
+                <div className="button1">
+                    <Button texto='INSCREVA-SE' background='#48517C' backgroundTexto='#FCFCFA' width='230px' height="50px" fontsize="24px"/>
+                </div>
             </div>
 
             <div className="botoes">
