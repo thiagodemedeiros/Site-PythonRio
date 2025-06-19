@@ -15,14 +15,25 @@
     height: 100vh;
 
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: flex-start;
 
     padding-top: 40px;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .logo1 {
     width: 770px;
     height: auto;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding-top: 20px;
 }
