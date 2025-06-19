@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    background-image: url('../assets/fundo1.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.logo1 {
+    width: 770px;
+    height: auto;
+}
