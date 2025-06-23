@@ -1,10 +1,9 @@
 import React from "react";
-import './Section3.css'
-import Fundo from '../assets/fundo-section3.png'
+import './Section4.css'
 
-export default function Section3 () {
+export default function Section4 () {
     return (
-        <div className="Section3">
+        <div className="Section4">
             <h3>Vamos juntos escrever o próximo script dessa história?</h3>
             <button>Increva-se</button>
         </div>
