@@ -17,7 +17,6 @@ export default function Section1 () {
                 <a href="/sobre"><Button texto='Sobre' background='#FCFCFA' backgroundTexto='#48517C' height="40px"/></a>
                 <Button texto='Palestrantes' background='#FCFCFA' backgroundTexto='#48517C' height="40px"/>
                 <Button texto='Programação' background='#FCFCFA' backgroundTexto='#48517C' height="40px"/>
-                
             </div>
         </div>
     )

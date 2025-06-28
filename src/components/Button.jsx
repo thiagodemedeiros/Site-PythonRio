@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Button ({ texto,background,backgroundTexto,width='170px',height='auto',fontsize='20px' }) {
+export default function Button ({ texto,background,backgroundTexto,width='170px',height='auto',fontsize='20px',padding='5px 0px' }) {
     return (
-        <button 
+        <button className="button"
             style={{
-                padding: '5px 0px',
+                padding: padding,
                 width: width,
                 height: height,
                 borderRadius: '30px',
@@ -12,7 +12,9 @@ export default function Button ({ texto,background,backgroundTexto,width='170px'
                 color: backgroundTexto,
                 border: 'none',
                 fontWeight: 900,
-                fontSize: fontsize
+                fontSize: fontsize,
+                textAlign:'center',
+                cursor: 'pointer'
             }}
         >
             {texto}
