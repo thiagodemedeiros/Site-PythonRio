@@ -5,7 +5,7 @@ export default function Header () {
     return (
         <div className='header'>
             <div className='header-logo'>
-                <img src='logo.png' alt="" />
+                <a href="/"><img src='logo.png' alt="" /></a>
             </div>
 
             <div className="header-botoes">
