@@ -23,7 +23,8 @@
 }
 
 .logo1 {
-    width: 770px;
+    width: 40vw;
+    max-width: 770px;
     height: auto;
 }
 
