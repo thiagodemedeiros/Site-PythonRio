@@ -1,0 +1,114 @@
+.CardPalestrante-section {
+    padding: 20px 0px;
+    width: 485px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    border: #f8b57a solid 3px;
+    border-radius: 15px;
+    box-shadow:
+        5px 5px 2px 1px #fdab63,
+        1px 1px 1px 1px #f8b57a;
+    background-color: #FDF0D5;
+}
+
+.CardPalestrante-texto-foto {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    width: 420px;
+    /* border: #ffff solid 3px; */
+}
+
+.CardPalestrante-texto-foto img {
+    width: 200px;
+}
+
+.CardPalestrante-texto-foto-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    height: 95px;
+    margin-top: 7px;
+}
+
+.CardPalestrante-texto-foto-texto h4 {
+    width: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.CardPalestrante-texto-foto-texto p {
+    width: 192px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.CardPalestrante-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.CardPalestrante-redes img{
+    width: 18px;
+}
+
+.CardPalestrante-redes-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+}
+
+.CardPalestrante-redes-div h4{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -3px;
+}
+
+@media (max-width: 600px) {
+    .CardPalestrante-section {
+        padding: 20px 0px;
+        width: 250px;
+    }
+
+    .CardPalestrante-texto-foto {
+        flex-direction: column;
+        gap: 10px;
+        width: auto;
+    }
+
+    .CardPalestrante-texto-foto-texto {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        height: 90px;
+    }
+
+    .CardPalestrante-redes {
+        flex-direction: column;
+
+        width: auto;
+        height: 45px;
+    }
+}

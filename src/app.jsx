@@ -3,6 +3,7 @@ import Home from './pages/home/home';
 import Sobre from './pages/sobre/sobre';
 import LayoutPadrao from './LayoutPadrao';
 import Inscreva from './pages/inscreva/Inscreva';
+import Palestrantes from './pages/Palestrantes';
 
 export default function App () {
     return (
@@ -13,6 +14,7 @@ export default function App () {
 
                 <Route element={<LayoutPadrao/>}>
                     <Route path='/sobre' element={<Sobre/>} />
+                    <Route path='/palestrantes' element={<Palestrantes/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
