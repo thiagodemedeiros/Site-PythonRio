@@ -14,6 +14,11 @@
         5px 5px 2px 1px #fdab63,
         1px 1px 1px 1px #f8b57a;
     background-color: #FDF0D5;
+
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .CardPalestrante-texto-foto {

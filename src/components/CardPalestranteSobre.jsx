@@ -6,6 +6,7 @@ import './CardPalestranteSobre.css'
 export default function CardPalestrante () {
     return (
         <div className='CardPalestrante-section'>
+            <a href="/sobrepalestrante">
             <div className='CardPalestrante-texto-foto'>
                 <img src={FotoPalestrante} alt="foto palestrante" />
                 <div className='CardPalestrante-texto-foto-texto'>
@@ -13,6 +14,7 @@ export default function CardPalestrante () {
                     <p>Veio para ensinar doidice aos doidois que querem aprender doidicies</p>
                 </div>
             </div>
+            </a>
 
             <div className='CardPalestrante-redes'>
                 <a href="">
