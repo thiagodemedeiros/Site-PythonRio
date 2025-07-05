@@ -1,0 +1,19 @@
+.InputFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.InputFormulario-h4 {
+    color: #464A6D;
+}
+
+.InputFormulario-input {
+    background-color: #FFDF9E;
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+}
