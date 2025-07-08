@@ -25,7 +25,7 @@ export default function Inscreva () {
         e.preventDefault()
 
         try {
-            const response = await fetch('http://localhost:8000/usuarios', {
+            const response = await fetch('https://api-cadastro-pythonrio.onrender.com/usuarios', {
                 method:'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(formData)
