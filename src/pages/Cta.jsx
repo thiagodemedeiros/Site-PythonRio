@@ -5,7 +5,7 @@ export default function Cta () {
     return (
         <div className="Cta">
             <h3>Vamos juntos escrever o próximo script dessa história?</h3>
-            <button>Inscreva-se</button>
+            <a href="/inscreva"><button>Inscreva-se</button></a>
         </div>
     )
 }

@@ -20,6 +20,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    & a {
+        text-decoration: none;
+        border: none;
+    }
+
+    & button {
+        cursor: pointer;
+    }
 }
 
 .Cta h3 {

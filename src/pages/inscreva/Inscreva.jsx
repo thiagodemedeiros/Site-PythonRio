@@ -55,7 +55,7 @@ export default function Inscreva () {
 
             <h4 className='inscreva-section-h4'>Inscreva-se</h4>
 
-            <form className='inscreva-section-formulario' onSubmit={handleSubmit}>
+            <div className='inscreva-section-formulario'>
                 {/* <div className='inscreva-section-formulario-2item'> */}
                     {/* <InputFormulario textoh4='Nome' name='nome' value={formData.nome} onChange={handleChange}/> */}
                     {/* <InputFormulario textoh4='Sobrenome' name='sobrenome' value={formData.sobrenome} onChange={handleChange}/> */}
@@ -68,8 +68,8 @@ export default function Inscreva () {
                     {/* <InputFormulario textoh4='CPF' name='cpf' value={formData.cpf} onChange={handleChange}/> */}
                     {/* <InputFormulario textoh4='Data de nascimento' name='data_de_nascimento' value={formData.data_de_nascimento} onChange={handleChange}/> */}
                 {/* </div> */}
-                <a href=""><button type='submit'>Acesse o fomulário e inscreva-se</button></a>
-            </form>
+                <a href="/"><button type='submit'>Acesse o fomulário e inscreva-se</button></a>
+            </div>
         </div>
 
         <Cta/>
