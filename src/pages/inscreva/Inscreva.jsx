@@ -25,7 +25,7 @@ export default function Inscreva () {
         e.preventDefault()
 
         try {
-            const response = await fetch('https://api-cadastro-pythonrio.onrender.com/usuarios', {
+            const response = await fetch('API RETIRADA', {
                 method:'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(formData)
@@ -56,19 +56,19 @@ export default function Inscreva () {
             <h4 className='inscreva-section-h4'>Inscreva-se</h4>
 
             <form className='inscreva-section-formulario' onSubmit={handleSubmit}>
-                <div className='inscreva-section-formulario-2item'>
-                    <InputFormulario textoh4='Nome' name='nome' value={formData.nome} onChange={handleChange}/>
-                    <InputFormulario textoh4='Sobrenome' name='sobrenome' value={formData.sobrenome} onChange={handleChange}/>
-                </div>
-                <div className='inscreva-section-formulario-2item'>
-                    <InputFormulario textoh4='E-mail' name='email' value={formData.email} onChange={handleChange}/>
-                    <InputFormulario textoh4='Celular' name='celular' value={formData.celular} onChange={handleChange}/>
-                </div>
-                <div className='inscreva-section-formulario-2item'>
-                    <InputFormulario textoh4='CPF' name='cpf' value={formData.cpf} onChange={handleChange}/>
-                    <InputFormulario textoh4='Data de nascimento' name='data_de_nascimento' value={formData.data_de_nascimento} onChange={handleChange}/>
-                </div>
-                <button type='submit'>Enviar</button>
+                {/* <div className='inscreva-section-formulario-2item'> */}
+                    {/* <InputFormulario textoh4='Nome' name='nome' value={formData.nome} onChange={handleChange}/> */}
+                    {/* <InputFormulario textoh4='Sobrenome' name='sobrenome' value={formData.sobrenome} onChange={handleChange}/> */}
+                {/* </div> */}
+                {/* <div className='inscreva-section-formulario-2item'> */}
+                    {/* <InputFormulario textoh4='E-mail' name='email' value={formData.email} onChange={handleChange}/> */}
+                    {/* <InputFormulario textoh4='Celular' name='celular' value={formData.celular} onChange={handleChange}/> */}
+                {/* </div> */}
+                {/* <div className='inscreva-section-formulario-2item'> */}
+                    {/* <InputFormulario textoh4='CPF' name='cpf' value={formData.cpf} onChange={handleChange}/> */}
+                    {/* <InputFormulario textoh4='Data de nascimento' name='data_de_nascimento' value={formData.data_de_nascimento} onChange={handleChange}/> */}
+                {/* </div> */}
+                <a href=""><button type='submit'>Acesse o fomulário e inscreva-se</button></a>
             </form>
         </div>
 
