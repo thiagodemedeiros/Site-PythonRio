@@ -28,13 +28,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    gap: 20px;
 }
 
 .titulo h3 {
     font-weight: 900;
     font-size: 60px;
     color: #273455;
-    width: 800px;
+    width: 880px;
+    text-align: center;
+}
+
+.titulo h4 {
+    font-weight: 500;
+    font-size: 36px;
+    color: #273455;
+    width: 600px;
     text-align: center;
 }
 
@@ -43,12 +53,20 @@
         font-size: 60px;
         width: 80vw;
     }
+
+    .titulo h4 {
+        width: 70vw;
+    }
 }
 
 @media (max-width: 600px) {
     .titulo h3 {
         font-size: 50px;
         width: 80vw;
+    }
+
+    .titulo h4 {
+        width: 60vw;
     }
 }
 

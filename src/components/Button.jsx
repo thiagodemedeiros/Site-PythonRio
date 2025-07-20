@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button ({ texto,background,backgroundTexto,width='170px',height='auto',fontsize='20px',padding='5px 0px' }) {
+export default function Button ({ texto,background,backgroundTexto,width='170px',height='auto',fontsize='20px',padding='5px 0px',fontWeight=900 }) {
     return (
         <button className="button"
             style={{
@@ -11,7 +11,7 @@ export default function Button ({ texto,background,backgroundTexto,width='170px'
                 backgroundColor: background,
                 color: backgroundTexto,
                 border: 'none',
-                fontWeight: 900,
+                fontWeight: fontWeight,
                 fontSize: fontsize,
                 textAlign:'center',
                 cursor: 'pointer'
