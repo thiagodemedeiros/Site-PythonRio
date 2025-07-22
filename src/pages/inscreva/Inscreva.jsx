@@ -68,7 +68,7 @@ export default function Inscreva () {
                     {/* <InputFormulario textoh4='CPF' name='cpf' value={formData.cpf} onChange={handleChange}/> */}
                     {/* <InputFormulario textoh4='Data de nascimento' name='data_de_nascimento' value={formData.data_de_nascimento} onChange={handleChange}/> */}
                 {/* </div> */}
-                <a href="/"><button type='submit'>Acesse o fomulário e inscreva-se</button></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTWAcFjf3h5AKKC9ouubRZ8EhYB6ThczSqKQPtkJmWTCl9Ng/viewform"><button type='submit'>Acesse o fomulário e inscreva-se</button></a>
             </div>
         </div>
 
