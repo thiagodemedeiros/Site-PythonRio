@@ -1,18 +1,22 @@
 import React from "react";
 import './Section3.css'
 import CardPalestrante from '../../../components/CardPalestrante'
-import Button from "../../../components/Button";
+import foto_erika from "../assets/erika.png"
+import foto_claudio from "../assets/claudio.png"
+import foto_moscatel from "../assets/moscatel.png"
+// import Button from "../../../components/Button";
 
 export default function Section3 () {
     return (
         <div className="section-body">
             <div class="titulo">
-                <h3>Faça sua proposta de palestra</h3>
-                <h4>E seja um dos primeiros palestrantes na volta da PythOnRio</h4>
+                <h3>Palestrantes confirmados</h3>
             </div>
 
             <div className="secao1-cards">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScAnEA2Eys8AA6pekGwPhMC1xmEAL7dNzsy40QxOK3TdhGbDA/viewform"><Button texto='Envie sua palestra' background='#48517C' backgroundTexto='#FCFCFA' width='270px' height="50px" fontsize="24px" fontWeight='700'/></a>
+                <CardPalestrante nome={'Moscatel'} tema_palestra={"Paradoxo de Moravec - Complexidade do aprendizado para Ia em tarefas banais"} foto_palestrante={foto_moscatel}/>
+                <CardPalestrante nome={'Erika'} tema_palestra={"Construindo um RAG Local com Python e Ollama"} foto_palestrante={foto_erika}/>
+                <CardPalestrante nome={'Claudio'} tema_palestra={"Usando Scrapy para obter dados públicos de maneira estruturada"} foto_palestrante={foto_claudio}/>
             </div>
         </div>
     )
