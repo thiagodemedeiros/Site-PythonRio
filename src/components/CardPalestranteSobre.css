@@ -1,6 +1,6 @@
-.CardPalestrante-section {
+.CardPalestranteSobre-section {
     padding: 20px 0px;
-    width: 485px;
+    width: 355px;
 
     display: flex;
     flex-direction: column;
@@ -21,49 +21,49 @@
     }
 }
 
-.CardPalestrante-texto-foto {
+.CardPalestranteSobre-texto-foto {
     display: flex;
-    flex-direction: row;
-    align-items: start;
+    flex-direction: column-reverse;
+    align-items: center;
     justify-content: space-between;
 
-    width: 420px;
+    width: auto;
     /* border: #ffff solid 3px; */
 }
 
-.CardPalestrante-texto-foto img {
-    width: 200px;
+.CardPalestranteSobre-texto-foto img {
+    width: 250px;
 }
 
-.CardPalestrante-texto-foto-texto {
+.CardPalestranteSobre-texto-foto-texto {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
 
-    height: 95px;
-    margin-top: 7px;
+    /* height: 95px; */
+    margin: 0px 0px 15px 0px;
 }
 
-.CardPalestrante-texto-foto-texto h4 {
+.CardPalestranteSobre-texto-foto-texto h4 {
     width: auto;
     font-size: 20px;
     font-weight: 700;
 }
 
-.CardPalestrante-texto-foto-texto p {
+.CardPalestranteSobre-texto-foto-texto p {
     width: 192px;
     font-size: 16px;
     font-weight: 500;
 }
 
-.CardPalestrante-redes {
+.CardPalestranteSobre-redes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    width: 300px;
+    gap: 20px;
 
     & a {
         text-decoration: none;
@@ -71,11 +71,11 @@
     }
 }
 
-.CardPalestrante-redes img{
+.CardPalestranteSobre-redes img{
     width: 18px;
 }
 
-.CardPalestrante-redes-div {
+.CardPalestranteSobre-redes-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,25 +84,25 @@
     gap: 2px;
 }
 
-.CardPalestrante-redes-div h4{
+.CardPalestranteSobre-redes-div h4{
     font-size: 13px;
     font-weight: 700;
     margin-top: -3px;
 }
 
 @media (max-width: 600px) {
-    .CardPalestrante-section {
+    .CardPalestranteSobre-section {
         padding: 20px 0px;
         width: 250px;
     }
 
-    .CardPalestrante-texto-foto {
+    .CardPalestranteSobre-texto-foto {
         flex-direction: column;
         gap: 10px;
         width: auto;
     }
 
-    .CardPalestrante-texto-foto-texto {
+    .CardPalestranteSobre-texto-foto-texto {
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -110,7 +110,7 @@
         height: 90px;
     }
 
-    .CardPalestrante-redes {
+    .CardPalestranteSobre-redes {
         flex-direction: column;
 
         width: auto;

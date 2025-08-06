@@ -10,6 +10,7 @@ const speakers = [
     id: 1,
     nome: "Moscatel",
     palestra: "Paradoxo de Moravec - Complexidade do aprendizado para Ia em tarefas banais",
+    palestra_descricao: 'Paradoxo de Moravec explica o porquê tarefas simples para seres humanos são complexas para Inteligência artificial, como abrir uma porta, enquanto tarefas complexas são fáceis para IA.',
     foto: foto_moscatel,
     instagram_link: "https://www.instagram.com/gabriel_fevrier/",
     instagram_arroba: "@gabriel_fevrier",
@@ -22,6 +23,7 @@ const speakers = [
     id: 2,
     nome: "Erika",
     palestra: "Construindo um RAG Local com Python e Ollama",
+    palestra_descricao: 'Um projeto prático e acessível para usar IA generativa com seus próprios dados, direto no seu computador.',
     foto: foto_erika,
     instagram_link: "",
     instagram_arroba: "",
@@ -34,6 +36,7 @@ const speakers = [
     id: 3,
     nome: "Claudio",
     palestra: "Usando Scrapy para obter dados públicos de maneira estruturada",
+    palestra_descricao: 'Mostrar o uso do framework Scrapy para fazer web scraping de órgãos públicos brasileiros (essa é minha experência, mas pode ser usado em qualuer site), incluindo medidas de evitar bloqueios (resolvedor de captcha, Proxyrotation, user agent rotation) e de processamento de dados.',
     foto: foto_claudio,
     instagram_link: "",
     instagram_arroba: "",
@@ -59,8 +62,9 @@ export default function SobrePalestrantes () {
     return (
         <div>
             <div className="SobrePalestrantes-secao1">
-                <h1>Sobre a palestra</h1>
-                <p className="SobrePalestrantes-secao1-p">{speaker.palestra}</p>
+                <h3>Sobre a palestra</h3>
+                <h2>{speaker.palestra}</h2>
+                <p className="SobrePalestrantes-secao1-p">{speaker.palestra_descricao}</p>
             </div>
 
             <div className="SobrePalestrantes-secao2">
