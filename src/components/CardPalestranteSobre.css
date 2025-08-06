@@ -42,7 +42,7 @@
     justify-content: space-between;
 
     /* height: 95px; */
-    margin: 0px 0px 15px 0px;
+    margin-bottom: 15px;
 }
 
 .CardPalestranteSobre-texto-foto-texto h4 {
@@ -93,27 +93,32 @@
 @media (max-width: 600px) {
     .CardPalestranteSobre-section {
         padding: 20px 0px;
+        justify-content: center;
         width: 250px;
+        height: 300px;
     }
 
     .CardPalestranteSobre-texto-foto {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column-reverse;
+        justify-content: center;
         width: auto;
+        height: auto;
+    }
+
+    .CardPalestranteSobre-texto-foto img {
+        width: 200px;
     }
 
     .CardPalestranteSobre-texto-foto-texto {
         justify-content: space-between;
         align-items: center;
         text-align: center;
-
-        height: 90px;
+        margin-bottom: 10px;
     }
 
     .CardPalestranteSobre-redes {
         flex-direction: column;
-
-        width: auto;
-        height: 45px;
+        justify-content: center;
+        gap: 20px;
     }
 }
