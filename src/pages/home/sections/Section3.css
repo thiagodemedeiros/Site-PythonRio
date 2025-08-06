@@ -21,6 +21,10 @@
     width: 70vw;
     max-width: 820px;
     height: auto;
+
+    & a {
+        text-decoration: none;
+    }
 }
 
 .titulo {

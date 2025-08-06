@@ -17,7 +17,7 @@ export default function App () {
                 <Route element={<LayoutPadrao/>}>
                     <Route path='/sobre' element={<Sobre/>} />
                     <Route path='/palestrantes' element={<Palestrantes/>} />
-                    <Route path='/sobrepalestrante' element={<SobrePalestrante/>} />
+                    <Route path='/sobrepalestrante/:id' element={<SobrePalestrante/>} />
                     <Route path='/programacao' element={<Programacao/>} />
                 </Route>
             </Routes>
