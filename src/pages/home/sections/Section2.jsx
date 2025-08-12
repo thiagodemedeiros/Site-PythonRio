@@ -6,6 +6,10 @@ import Image2 from '../assets/image2.png'
 export default function Section2 () {
     return (
         <div className="Section2">
+            <div className="texto1-h1">
+                <h1>A PythOnRio está de volta</h1>
+            </div>
+
             <div className="texto1">
                 <img src={Image1} alt="imagem" />
                 <div className="texto1-h3">

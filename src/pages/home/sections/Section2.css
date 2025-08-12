@@ -26,6 +26,13 @@
     color: #FFFFFF;
 }
 
+.texto1-h1{
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
 .texto1 img {
     width: 450px;
 }
@@ -95,6 +102,12 @@
     width: 90vw;
 }
 
+.texto1-h1{
+    text-align: center;
+    font-size: 26px;
+    width: 90vw;
+}
+
 .texto1-h3 {
     text-align: center;
 }
@@ -115,6 +128,10 @@
     width: 400px;
 }
 
+.texto1-h1{
+    font-size: 22px;
+}
+
 .texto1-h3 {
     width: 350px;
 }
@@ -131,6 +148,10 @@
 @media (max-width: 450px) {
 .texto1 img {
     width: 300px;
+}
+
+.texto1-h1{
+    font-size: 20px;
 }
 
 .texto1-h3 {
