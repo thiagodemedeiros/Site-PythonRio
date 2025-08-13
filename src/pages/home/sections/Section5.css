@@ -22,3 +22,17 @@
     width: 80vw;
     height: 300px;
 }
+
+@media (max-width: 600px) {
+    .section5-texto{
+    font-size: 36px;
+    max-width: 330px;
+}
+}
+
+@media (max-width: 400px) {
+    .section5-texto{
+    font-size: 32px;
+    max-width:80vw;
+}
+}
