@@ -8,11 +8,11 @@ import CtaPalestra from '../home/sections/Section3'
 export default function programacao() {
     return (
         <>
-            {/* <Secao1/> */}
-            {/* <Secao2/> */}
-            {/* <Secao3/> */}
+            <Secao1/>
+            <Secao2/>
+            <Secao3/>
             {/* <Secao4/> */}
-            <CtaPalestra/>
+            {/* <CtaPalestra/> */}
         </>
     )
 }
