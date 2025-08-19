@@ -6,9 +6,9 @@ export default function footer () {
         <div className="footer">
             <div className="botoes1">
                 <a href="/"><h5>PythOnRio</h5></a>
-                <a href="/palestrantes"><h5>Palestrantes</h5></a>
+                {/* <a href="/palestrantes"><h5>Palestrantes</h5></a> */}
                 <a href="/sobre"><h5>Sobre</h5></a>
-                <a href="/inscreva"><h5>Inscreva-se</h5></a>
+                {/* <a href="/inscreva"><h5>Inscreva-se</h5></a> */}
             </div>
 
             <div className="botoes2">
