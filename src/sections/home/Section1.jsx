@@ -5,7 +5,7 @@ export default function Section1() {
     return (
         <>
             <div className='Section1'>
-                <img src={logo} alt="Logo da Python On Rio" />
+                <img src={logo} alt="Logo da PythOnRio" />
             </div>
 
             <div className='Section1-aba'>

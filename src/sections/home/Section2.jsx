@@ -5,7 +5,7 @@ export default function Section2() {
     return (
         <>
             <div className='Section2'>
-                <img src={image} alt="Foto dos participantes reunidos no ultimo evento da python on rio" />
+                <img src={image} alt="Foto dos participantes reunidos no ultimo evento da PythOnRio" />
                 <p>A nossa volta aconteceu
                     e ninguém consegue explicar
                     tudo que a gente viveu</p>
