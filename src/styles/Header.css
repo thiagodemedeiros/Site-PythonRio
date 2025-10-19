@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 120px;
+    height: 110px;
     width: 100vw;
     padding: 0px 100px 0px 100px;
 
@@ -17,10 +17,8 @@
 .header-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
 
-    width: 400px;
+    gap: 30px;
     height: auto;
-
-    border: 2px solid #ff0000;
 }
