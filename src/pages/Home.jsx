@@ -9,11 +9,11 @@ export default function Home() {
     return(
         <>
             <Header/>
-            <Section1/>
-            <Section2/>
-            <Section3/>
-            <Cta/>
-            <Footer/>
+            {/* <Section1/> */}
+            {/* <Section2/> */}
+            {/* <Section3/> */}
+            {/* <Cta/> */}
+            {/* <Footer/> */}
         </>
     )
 }

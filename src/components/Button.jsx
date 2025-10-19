@@ -20,6 +20,13 @@ export default function Button({
         color: ${color};
         cursor: pointer;
         text-align: center;
+
+        @media (max-width: 600px) {
+            width: auto;
+            height: auto;
+            padding: 7px 20px;
+            font-size: 16px;
+        }
     `
 
     return (
