@@ -1,0 +1,42 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 450px;
+    margin-top: -45px;
+    gap: 40px;
+
+    background-image: url('../../assets/components/fundo_cta.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    & h4 {
+        font-weight: 700;
+        font-size: 60px;
+        color: aliceblue;
+        width: 900px;
+        text-align: center;
+
+        margin-top: 20px;
+    }
+
+    & button {
+        width: auto;
+        height: 50px;
+        border-radius: 50px;
+        padding: 0px 40px;
+        cursor: pointer;
+
+
+        background: #F3976A;
+        background: linear-gradient(314deg,rgba(240, 118, 123, 1) 0%, rgba(243, 151, 106, 1) 100%);
+
+        font-weight: 700;
+        font-size: 20px;
+        color: aliceblue;
+    }
+}
