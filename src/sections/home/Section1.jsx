@@ -1,5 +1,5 @@
 import '../../styles/home/section1.css'
-import logo from "../../assets/logo_section1_home.png"
+import logo from "../../assets/home/logo_section1_home.png"
 
 export default function Section1() {
     return (

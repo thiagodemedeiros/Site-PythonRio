@@ -1,5 +1,5 @@
 import "../styles/components/Header.css"
-import logo from "../assets/Vector.png"
+import logo from "../assets/home/Vector.png"
 import Button from "./Button"
 
 export default function Header() {
