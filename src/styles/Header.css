@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 120px;
+    width: 100vw;
+    padding: 0px 100px 0px 100px;
+
+    background: #F3976A;
+    background: linear-gradient(314deg,rgba(243, 151, 106, 1) 0%, rgba(240, 118, 123, 1) 100%);
+    border-radius: 0px 0px 40px 40px;
+    z-index: 1;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 400px;
+    height: auto;
+
+    border: 2px solid #ff0000;
+}
