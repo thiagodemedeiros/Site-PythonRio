@@ -11,7 +11,7 @@
     background-image: url('../../assets/home/fundo_section_1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 
     & img {
         margin-top: -25px;
@@ -29,7 +29,7 @@
     height: 150px;
     background: #F3976A;
     background: linear-gradient(314deg,rgba(243, 151, 106, 1) 0%, rgba(240, 118, 123, 1) 100%);
-    border-radius: 50px;
+    border-radius: 30px;
     margin-top: -45px;
 
     position: relative;
@@ -40,5 +40,93 @@
         font-size: 80px;
         color: aliceblue;
         text-shadow: 0px 2px 5px #00000060;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Section1 {
+        width: 100vw;
+        height: 750px;
+
+        & img {
+            margin-top: -25px;
+            width: 80vw;
+        }
+    }
+
+    .Section1-aba {
+        width: 100vw;
+        height: auto;
+        padding: 30px 0px;
+        margin-top: -45px;
+        border-radius: 20px;
+        & h3 {
+            font-weight: 700;
+            font-size: 65px;
+            color: aliceblue;
+            text-shadow: 0px 2px 5px #00000060;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .Section1-aba {
+        width: 100vw;
+        height: auto;
+        padding: 25px 0px;
+        margin-top: -45px;
+        border-radius: 20px;
+        & h3 {
+            font-weight: 700;
+            font-size: 45px;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .Section1 {
+        width: 100vw;
+        height: 500px;
+
+        & img {
+            margin-top: -5px;
+            width: 80vw;
+        }
+    }
+
+    .Section1-aba {
+        width: 100vw;
+        height: auto;
+        padding: 25px 0px;
+        margin-top: -45px;
+        border-radius: 20px;
+        & h3 {
+            font-weight: 700;
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .Section1 {
+        width: 100vw;
+        height: 500px;
+
+        & img {
+            margin-top: 0px;
+            width: 80vw;
+        }
+    }
+
+    .Section1-aba {
+        width: 100vw;
+        height: auto;
+        padding: 25px 0px;
+        margin-top: -45px;
+        border-radius: 20px;
+        & h3 {
+            font-weight: 700;
+            font-size: 30px;
+        }
     }
 }
