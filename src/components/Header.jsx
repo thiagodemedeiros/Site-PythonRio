@@ -1,4 +1,4 @@
-import "../styles/Header.css"
+import "../styles/components/Header.css"
 import logo from "../assets/Vector.png"
 import Button from "./Button"
 

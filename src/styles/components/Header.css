@@ -7,10 +7,12 @@
     height: 110px;
     width: 100vw;
     padding: 0px 100px 0px 100px;
+    position: relative;
 
     background: #F3976A;
-    background: linear-gradient(314deg,rgba(243, 151, 106, 1) 0%, rgba(240, 118, 123, 1) 100%);
+    background: linear-gradient(314deg,rgba(240, 118, 123, 1) 0%, rgba(243, 151, 106, 1) 100%);
     border-radius: 0px 0px 40px 40px;
+    box-shadow: 0px 5px 5px #00000040;
     z-index: 1;
 }
 
