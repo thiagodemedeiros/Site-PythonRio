@@ -10,12 +10,13 @@ export default function Header() {
             </a>
 
             <div className="header-buttons">
-                <Button texto={"Próximo evento"} width="150px"
-                height="30px"/>
-                <Button texto={"Sobre"} width="90px"
-                height="30px"/>
-                <Button texto="INSCREVA-SE" width="140px"
-                height="35px" backgroundcolor="#48517C" color="#FCFCFA"/>
+                <Button texto={"Próximo evento"} width="180px"
+                height="45px" fontsize='18px'/>
+                <Button texto={"Sobre"} width="120px"
+                height="45px" fontsize='18px'/>
+                <Button texto="INSCREVA-SE" width="180px"
+                height="55px" backgroundcolor="#48517C"
+                color="#FCFCFA" fontsize='18px'/>
             </div>
         </div>
     )

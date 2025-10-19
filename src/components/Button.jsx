@@ -7,6 +7,7 @@ export default function Button({
     width = "200px",
     height = "50px",
     color = "48517C",
+    fontsize = '14px',
 }) 
 {
     const StyledButton = styled.button`
@@ -15,8 +16,10 @@ export default function Button({
         border-radius: 40px;
         height: ${height};
         font-weight: 700;
+        font-size: ${fontsize};
         color: ${color};
         cursor: pointer;
+        text-align: center;
     `
 
     return (
