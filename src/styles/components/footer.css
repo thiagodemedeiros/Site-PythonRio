@@ -30,3 +30,18 @@
     gap: 2px;
     color: aliceblue;
 }
+
+@media (max-width: 450px) {
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }   
+
+    .footer-links {
+        align-items: center;
+    }
+    
+    .footer-texto {
+        align-items: center;
+    }
+}
