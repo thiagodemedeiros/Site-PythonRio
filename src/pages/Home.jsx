@@ -6,11 +6,9 @@ import Section3 from "../sections/home/Section3"
 export default function Home() {
     return(
         <>
-            <Layout>
-                <Section1/>
-                <Section2/>
-                <Section3/>
-            </Layout>
+            <Section1/>
+            <Section2/>
+            <Section3/>
         </>
     )
 }
