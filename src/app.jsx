@@ -10,6 +10,9 @@ function App() {
         <Layout>
           <Routes>
             <Route path='/' element = {<Home/>}/>
+            <Route path='/proximo_evento' element = {<Home/>}/>
+            <Route path='/sobre' element = {<Home/>}/>
+            <Route path='/inscreva-se' element = {<Home/>}/>
           </Routes>
         </Layout>
       </Router>

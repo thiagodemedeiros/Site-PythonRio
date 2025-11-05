@@ -8,6 +8,7 @@ export default function Button({
     height = "50px",
     color = "48517C",
     fontsize = '14px',
+    link = '/',
 }) 
 {
     const StyledButton = styled.button`
@@ -30,6 +31,8 @@ export default function Button({
     `
 
     return (
-        <StyledButton>{texto}</StyledButton>
+        <a href={link}>
+            <StyledButton>{texto}</StyledButton>
+        </a>
     )
 }
