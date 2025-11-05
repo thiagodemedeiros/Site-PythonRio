@@ -45,7 +45,7 @@
 
 @media (max-width: 1100px) {
     .Section1 {
-        width: 100vw;
+        width: 100%;
         height: 750px;
 
         & img {
@@ -55,7 +55,7 @@
     }
 
     .Section1-aba {
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 30px 0px;
         margin-top: -45px;
@@ -71,7 +71,7 @@
 
 @media (max-width: 800px) {
     .Section1-aba {
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 25px 0px;
         margin-top: -45px;
@@ -85,7 +85,7 @@
 
 @media (max-width: 560px) {
     .Section1 {
-        width: 100vw;
+        width: 100%;
         height: 500px;
 
         & img {
@@ -95,7 +95,7 @@
     }
 
     .Section1-aba {
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 25px 0px;
         margin-top: -45px;

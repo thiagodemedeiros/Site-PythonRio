@@ -83,7 +83,7 @@
 @media (max-width: 1200px) {
     .Section3 {
         height: 900px;
-        width: 100vw;
+        width: 100%;
         gap: 10px;
         margin-top: -40px;
     }
@@ -130,7 +130,7 @@
 @media (max-width: 955px) {
     .Section3 {
         height: 770px;
-        width: 100vw;
+        width: 100%;
         gap: 10px;
         margin-top: -40px;
     }
@@ -177,7 +177,7 @@
 @media (max-width: 780px) {
     .Section3 {
         height: 620px;
-        width: 100vw;
+        width: 100%;
         gap: 10px;
         margin-top: -40px;
     }
