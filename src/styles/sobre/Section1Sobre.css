@@ -48,7 +48,8 @@
     position: relative;
     z-index: 1;
 
-    height: 120px;
+    width: 100%;
+    padding: 30px 0px;
     background: linear-gradient(314deg,rgba(243, 151, 106, 1) 0%, rgba(240, 118, 123, 1) 100%);
     border-radius: 20px;
     margin-top: -20px;
