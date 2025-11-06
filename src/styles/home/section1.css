@@ -6,7 +6,7 @@
     margin-top: -35px;
 
     width: 100%;
-    height: 800px;
+    height: 80vh;
 
     background-image: url('../../assets/home/fundo_section_1.png');
     background-repeat: no-repeat;
@@ -46,7 +46,8 @@
 @media (max-width: 1100px) {
     .Section1 {
         width: 100%;
-        height: 750px;
+        height: 80vh;
+        max-height: 600px;
 
         & img {
             margin-top: -25px;
@@ -70,6 +71,12 @@
 }
 
 @media (max-width: 800px) {
+    .Section1 {
+        width: 100%;
+        height: 80vh;
+        max-height: 500px;
+    }
+
     .Section1-aba {
         width: 100%;
         height: auto;
@@ -86,7 +93,8 @@
 @media (max-width: 560px) {
     .Section1 {
         width: 100%;
-        height: 500px;
+        height: 80vh;
+        max-height: 400px;
 
         & img {
             margin-top: -5px;
@@ -110,7 +118,8 @@
 @media (max-width: 450px) {
     .Section1 {
         width: 100vw;
-        height: 500px;
+        height: 80vh;
+        max-height: 400px;
 
         & img {
             margin-top: 0px;
