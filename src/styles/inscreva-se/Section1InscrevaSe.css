@@ -54,7 +54,7 @@
     background: linear-gradient(314deg,rgba(243, 151, 106, 1) 0%, rgba(240, 118, 123, 1) 100%);
 
     margin-top: -20px;
-    margin-bottom: 25px;
+    margin-bottom: -20px;
     position: relative;
     z-index: 1;
 

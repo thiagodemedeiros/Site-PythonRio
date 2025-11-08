@@ -1,0 +1,167 @@
+.Section2InscrevaSe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    padding: 100px 0px;
+    gap: 50px;
+
+    background-color: #1E383A;
+    margin-bottom: 30px;
+
+    & .Section2InscrevaSe_h4_1 {
+        font-size: 24px;
+        width: 60vw;
+        max-width: 350px;
+        color: aliceblue;
+        text-align: center;
+    }
+}
+
+.Section2InscrevaSe_Cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+    width: 60vw;
+    
+    margin-top: -80px;
+    transition: all 1s ease;
+}
+
+.Section2InscrevaSe_h4_Cards_1 {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+
+    height: 0px;
+    width: 60vw;
+    max-width: 350px;
+    text-align: center;
+}
+
+.Section2InscrevaSe_Cards:hover {
+    margin-top: 0px;
+
+    & .Section2InscrevaSe_h4_Cards_1 {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+
+        font-size: 24px;
+        width: 60vw;
+        max-width: 350px;
+        color: aliceblue;
+
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: -50px;
+        height: auto;
+    }
+}
+
+.Section2InscrevaSe_CardPalestrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    cursor: pointer;
+
+    & img {
+        width: 250px;
+        height: 250px;
+        background-color: aliceblue;
+        object-fit: cover;
+        border-radius: 100%;
+        box-shadow: 0px 0px 0px 4px #40787c;
+    }
+
+    & h4 {
+        position: absolute;
+        top: 4%;
+        right: 50%;
+
+        font-size: 24px;
+        width: 150px;
+
+        color: aliceblue;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    & h5 {
+        position: absolute;
+        bottom: 4%;
+        left: 60%;
+
+        font-size: 20px;
+        width: 150px;
+
+        color: aliceblue;
+        text-shadow: 2px 2px 0px #000;
+    }
+}
+
+@media (max-width : 450px) {
+    .Section2InscrevaSe_CardPalestrante {
+        & img {
+            width: 220px;
+            height: 220px;
+            background-color: aliceblue;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0px 0px 0px 4px #40787c;
+        }
+
+        & h4 {
+            position: absolute;
+            top: 4%;
+            right: 50%;
+
+            font-size: 20px;
+            width: 120px;
+        }
+
+        & h5 {
+            position: absolute;
+            bottom: 4%;
+            left: 70%;
+
+            font-size: 18px;
+            width: 120px;
+        }
+    }
+}
+
+@media (max-width : 350px) {
+    .Section2InscrevaSe_CardPalestrante {
+        & img {
+            width: 220px;
+            height: 220px;
+            background-color: aliceblue;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0px 0px 0px 4px #40787c;
+        }
+
+        & h4 {
+            position: absolute;
+            top: 4%;
+            right: 68%;
+            width: 80px;
+        }
+
+        & h5 {
+            position: absolute;
+            bottom: 4%;
+            left: 70%;
+            width: 80px;
+        }
+    }
+}
