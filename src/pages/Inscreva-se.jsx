@@ -1,7 +1,9 @@
+import Section1InscrevaSe from '../sections/inscreva-se/Section1InscrevaSe'
+
 export default function InscrevaSe() {
     return (
-        <div className="InscrevaSe">
-            <h1>ESCREVER PAGINA InscrevaSe</h1>
-        </div>
+        <>
+            <Section1InscrevaSe/>
+        </>
     )
 }

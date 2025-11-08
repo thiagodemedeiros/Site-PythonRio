@@ -10,8 +10,8 @@ export default function Header() {
             </a>
 
             <div className="header-buttons">
-                <Button texto={"Próximo evento"} width="180px"
-                height="45px" fontsize='18px' link={'/proximo_evento'}/>
+                {/* <Button texto={"Próximo evento"} width="180px"
+                height="45px" fontsize='18px' link={'/proximo_evento'}/> */}
                 <Button texto={"Sobre"} width="120px"
                 height="45px" fontsize='18px' link={'/sobre'} />
                 <Button texto="INSCREVA-SE" width="180px"

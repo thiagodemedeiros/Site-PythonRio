@@ -1,0 +1,50 @@
+.Section1InscrevaSe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../../assets/home/fundo_section_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    margin-top: -35px;
+    /* height: 400px; */
+    padding: 150px 0px;
+    /* border: 2px red solid; */
+}
+
+.Section1InscrevaSe_patrocinio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    background-color: azure;
+    /* box-shadow: -10px 10px 0px 2px rgb(255, 70, 70); */
+    box-shadow: -5px 5px 0px 2px rgb(218, 60, 60);
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: -15px;
+
+    & img {
+        width: 50vw;
+        max-width: 400px;
+    }
+
+    & h4 {
+        font-size: clamp(18px, 5.5vw, 24px);
+        font-weight: 600;
+        color: rgb(218, 60, 60);
+    }
+}
+
+@media (max-width : 460px) {
+    .Section1InscrevaSe_patrocinio {
+        & h4 {
+            font-size: clamp(16px, 4.5vw, 22px);
+        }
+    }
+}
