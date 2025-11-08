@@ -22,7 +22,7 @@
 
 .Section2InscrevaSe_Cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -31,6 +31,16 @@
     
     margin-top: -80px;
     transition: all 1s ease;
+}
+
+.Section2InscrevaSe_Cards_Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+    width: 60vw;
 }
 
 .Section2InscrevaSe_h4_Cards_1 {
