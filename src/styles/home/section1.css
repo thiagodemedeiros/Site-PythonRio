@@ -14,8 +14,9 @@
     background-position: right;
 
     & img {
-        margin-top: -25px;
-        width: 900px;
+        margin-top: -5px;
+        width: auto;
+        height: 60%;
     }
 }
 
@@ -49,10 +50,11 @@
         height: 80vh;
         max-height: 600px;
 
-        & img {
-            margin-top: -25px;
-            width: 80vw;
-        }
+        /* & img {
+            margin-top: -5px;
+            width: auto;
+            height: 50vh;
+        } */
     }
 
     .Section1-aba {
@@ -75,6 +77,13 @@
         width: 100%;
         height: 80vh;
         max-height: 500px;
+
+        & img {
+            margin-top: -5px;
+            width: 70vw;
+            height: auto;
+            /* border: 2px red solid; */
+        }
     }
 
     .Section1-aba {
@@ -98,7 +107,8 @@
 
         & img {
             margin-top: -5px;
-            width: 80vw;
+            width: 70vw;
+            height: auto;
         }
     }
 
@@ -117,7 +127,7 @@
 
 @media (max-width: 450px) {
     .Section1 {
-        width: 100vw;
+        width: 100%;
         height: 80vh;
         max-height: 400px;
 
@@ -128,7 +138,7 @@
     }
 
     .Section1-aba {
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 25px 0px;
         margin-top: -45px;
