@@ -15,7 +15,7 @@ function App() {
             <Route path='/' element = {<Home/>}/>
             <Route path='/sobre' element = {<Sobre/>}/>
             <Route path='/inscreva-se' element = {<InscrevaSe/>}/>
-            <Route path='/PaginaDoPalestrante' element = {<PaginaDoPalestrante/>}/>
+            <Route path='/PaginaDoPalestrante/:nome' element = {<PaginaDoPalestrante/>}/>
           </Routes>
         </Layout>
       </Router>
