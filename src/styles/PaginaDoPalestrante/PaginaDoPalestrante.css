@@ -1,0 +1,86 @@
+.PaginaDoPalestrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* height: 800px; */
+    padding: 120px 0px;
+    background-color: blue;
+
+    margin-top: -40px;
+}
+
+.PaginaDoPalestrante_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    height: auto;
+    width: auto;
+    padding: 40px 30px;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+.PaginaDoPalestrante_card_titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    height: auto;
+    width: 60vw;
+    /* background-color: blanchedalmond; */
+    border-radius: 20px;
+
+    & img {
+        width: auto;
+        height: 300px;
+        border-radius: 15px;
+    }
+}
+
+.PaginaDoPalestrante_card_titulo_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+    width: 400px;
+    /* border: 2px red solid; */
+
+    & h4 {
+        font-size: 26px;
+    }
+
+    & h5 {
+        font-size: 22px;
+    }
+
+    & p {
+        font-size: 18px;
+    }
+}
+
+.PaginaDoPalestrante_card_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 50vw;
+}
+
+.PaginaDoPalestrante_card_links_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+}

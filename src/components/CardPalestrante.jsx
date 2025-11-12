@@ -5,7 +5,7 @@ const imgDefault = 'https://img.freepik.com/fotos-gratis/gato-alegre-a-divertir-
 export default function CardPalestrante({NomeDoPalestrante = 'Nome do Palestrante',
                                         FotoDoPalestrante = imgDefault,
                                         TituloDaPalestra = 'Titulo da Palestra',
-                                        LinkPaginaDoPalestrante = "/"
+                                        LinkPaginaDoPalestrante = "/PaginaDoPalestrante"
 }) {
     return ( <>
         <a href={LinkPaginaDoPalestrante}>

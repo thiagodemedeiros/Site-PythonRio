@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import InscrevaSe from './pages/Inscreva-se';
 import Sobre from './pages/Sobre';
 import Layout from './layout';
-//aaaaaaa
+import PaginaDoPalestrante from './pages/PaginaDoPalestrante'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
             <Route path='/' element = {<Home/>}/>
             <Route path='/sobre' element = {<Sobre/>}/>
             <Route path='/inscreva-se' element = {<InscrevaSe/>}/>
+            <Route path='/PaginaDoPalestrante' element = {<PaginaDoPalestrante/>}/>
           </Routes>
         </Layout>
       </Router>
