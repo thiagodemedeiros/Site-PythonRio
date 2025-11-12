@@ -6,7 +6,8 @@
 
     /* height: 800px; */
     padding: 120px 0px;
-    background-color: blue;
+    background: #3345cc;
+    background: linear-gradient(314deg,rgba(4, 16, 84, 1) 0%, rgba(51, 69, 204, 1) 100%);
 
     margin-top: -40px;
 }
@@ -19,9 +20,10 @@
     gap: 40px;
 
     height: auto;
-    width: auto;
-    padding: 40px 30px;
-    background-color: aquamarine;
+    width: 800px;
+    padding: 40px 0px;
+    background-color: rgb(120, 199, 245);
+    box-shadow: -10px 10px 0px 10px #000000;
     border-radius: 20px;
 }
 
@@ -51,8 +53,7 @@
     justify-content: center;
     gap: 10px;
 
-    width: 400px;
-    /* border: 2px red solid; */
+    width: auto;
 
     & h4 {
         font-size: 26px;
@@ -60,10 +61,12 @@
 
     & h5 {
         font-size: 22px;
+        width: 300px;
     }
 
     & p {
         font-size: 18px;
+        width: 300px;
     }
 }
 
@@ -71,16 +74,111 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
-    width: 50vw;
+    gap: 130px;
 }
 
 .PaginaDoPalestrante_card_links_item {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 
     gap: 2px;
+    height: auto;
+
+    & img {
+        width: 24px;
+        height: 24px;
+    }
+
+    & h6 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 900px) {
+    .PaginaDoPalestrante_card{
+        height: auto;
+        width: 430px;
+        padding: 60px 0px;
+        box-shadow: -8px 8px 0px 6px #000000;
+    }
+
+    .PaginaDoPalestrante_card_titulo {
+        flex-direction: column;
+
+        width: 300px;
+    }
+
+    .PaginaDoPalestrante_card_links {
+        flex-direction: column;
+        margin-top: 15px;
+
+        gap: 30px;
+    }
+}
+
+@media (max-width : 550px) {
+    .PaginaDoPalestrante_card{
+        width: 80vw;
+        max-width: 300px;
+        padding: 40px 0px;
+        box-shadow: -8px 8px 0px 6px #000000;
+    }
+
+    .PaginaDoPalestrante_card_titulo {
+        flex-direction: column;
+        width: 80vw;
+        max-width: 300px;
+
+        & img {
+            height: auto;
+            max-width: 220px;
+            width: 45vw;
+        }
+    }
+
+    .PaginaDoPalestrante_card_titulo_texto {
+        align-items: center;
+
+        & h4 {
+            font-size: 22px;
+            max-width: 220px;
+            width: 45vw;
+        }
+
+        & h5 {
+            font-size: 18px;
+            max-width: 220px;
+            width: 45vw;
+        }
+
+        & p {
+            font-size: 16px;
+            max-width: 220px;
+            width: 45vw;
+        }
+    }
+
+    .PaginaDoPalestrante_card_links {
+        flex-direction: column;
+        margin-top: 0px;
+
+        gap: 20px;
+    }
+
+    .PaginaDoPalestrante_card_links_item {
+        gap: 4px;
+
+        & img {
+            width: 20px;
+            height: 20px;
+        }
+
+        & h6 {
+            font-size: 16px;
+        }
+    }
 }

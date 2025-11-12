@@ -1,6 +1,6 @@
-import foto_madu from '../../public/speakers_photos/foto_madu.jpg'
-import foto_diogenes from '../../public/speakers_photos/foto_diogenes.jpg'
-import foto_osniel from '../../public/speakers_photos/foto_osniel.jpg'
+import foto_madu from '/speakers_photos/foto_madu.jpg'
+import foto_diogenes from '/speakers_photos/foto_diogenes.jpg'
+import foto_osniel from '/speakers_photos/foto_osniel.jpg'
 
 export const Speakers = [
     {

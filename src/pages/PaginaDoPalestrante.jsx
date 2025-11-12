@@ -1,7 +1,10 @@
 import "../styles/PaginaDoPalestrante/PaginaDoPalestrante.css"
 import { Speakers } from '../../data/speakers/speakers'
-import img from '../../public/speakers_photos/foto_madu.jpg'
 import { useParams } from "react-router-dom"
+
+import logo_github from '/redes_logos/github-logo.png'
+import logo_instagram from '/redes_logos/instagram-logo.png'
+import logo_linkdin from '/redes_logos/linkdin-logo.png'
 
 export default function PaginaDoPalestrante() {
     const { nome } = useParams();
@@ -30,32 +33,34 @@ export default function PaginaDoPalestrante() {
                     </div>
                 </div>
 
-                <div className="PaginaDoPalestrante_card_links">
-                {speaker.link_github && (
-                    <a href={speaker.link_github}>
-                        <div className="PaginaDoPalestrante_card_links_item">
-                            <img src="" alt="Logo do GitHub" />
-                            <h6>{speaker.github}</h6>
-                        </div>
-                    </a>
+                {(speaker.link_github || speaker.link_instagran || speaker.link_linkedin) && (
+                    <div className="PaginaDoPalestrante_card_links">
+                    {speaker.link_github && (
+                        <a href={speaker.link_github}>
+                            <div className="PaginaDoPalestrante_card_links_item">
+                                <img src={logo_github} alt="Logo do GitHub" />
+                                <h6>{speaker.github}</h6>
+                            </div>
+                        </a>
+                    )}
+                    {speaker.link_instagran && (
+                        <a href={speaker.link_instagran}>
+                            <div className="PaginaDoPalestrante_card_links_item">
+                                <img src={logo_instagram} alt="Logo do Instagran" />
+                                <h6>{speaker.instagran}</h6>
+                            </div>
+                        </a>
+                    )}
+                    {speaker.link_linkedin && (
+                        <a href={speaker.link_linkedin} target="_blank">
+                            <div className="PaginaDoPalestrante_card_links_item">
+                                <img src={logo_linkdin} alt="Logo do Linkdin" />
+                                <h6>{speaker.linkedin}</h6>
+                            </div>
+                        </a>
+                    )}
+                    </div>
                 )}
-                {speaker.link_instagran && (
-                    <a href={speaker.link_instagran}>
-                        <div className="PaginaDoPalestrante_card_links_item">
-                            <img src="" alt="Logo do Instagran" />
-                            <h6>{speaker.instagran}</h6>
-                        </div>
-                    </a>
-                )}
-                {speaker.link_linkedin && (
-                    <a href={speaker.link_linkedin}>
-                        <div className="PaginaDoPalestrante_card_links_item">
-                            <img src="" alt="Logo do Linkdin" />
-                            <h6>{speaker.linkedin}</h6>
-                        </div>
-                    </a>
-                )}
-                </div>
             </div>
         </div>
     </>)
