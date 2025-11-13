@@ -26,8 +26,8 @@ export const Speakers = [
         link_github : '',
         instagran : '',
         link_instagran : '',
-        linkedin : '',
-        link_linkedin : '',
+        linkedin : 'diego-rodrigues-senra-passos',
+        link_linkedin : 'https://www.linkedin.com/in/diego-rodrigues-senra-passos-296a31229/',
     },
     {
         code : '3',
@@ -39,7 +39,7 @@ export const Speakers = [
         link_github : '',
         instagran : '',
         link_instagran : '',
-        linkedin : '',
-        link_linkedin : '',
+        linkedin : 'osniel-teixeira',
+        link_linkedin : 'https://www.linkedin.com/in/osniel-teixeira/',
     }
 ];
