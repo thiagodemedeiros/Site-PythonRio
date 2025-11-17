@@ -4,7 +4,7 @@ export default function Section3InscrevaSe() {
     return (
         <div className="Section3InscrevaSe">
             <div className='Section3InscrevaSe_titulo'>
-                <h3>Localização</h3>
+                <h3>Localizado no:</h3>
             </div>
 
             <iframe className='Section3InscrevaSe_mapa'
