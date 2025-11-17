@@ -6,7 +6,7 @@ export default function Cta() {
             <div className="cta">
                 <h4>Vamos juntos escrever o próximo script dessa história?</h4>
                 <a href="/">
-                    <button>INSCREVA-SE NA NOSSA LISTA DE INTERESSE</button>
+                    <button>INSCREVA-SE NO NOSSO PRÓXIMO EVENTO</button>
                 </a>
             </div>
         </>
