@@ -17,7 +17,9 @@ export default function Section4InscrevaSe() {
 
         <div className='Section4InscrevaSe_cta'>
             <h4>Inscreva-se agora no nosso próximo evento!</h4>
-            <a href=""><button>Clique aqui e Inscreva-se</button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWY78hG91ncBOp-x6phFlReOkGjfJpRIeoVM5NddHBjFALlw/viewform" target="_blank">
+                <button>Clique aqui e Inscreva-se</button>
+            </a>
             <h4>Mas seja rápido, pois temos vagas limitadas!!!</h4>
         </div>
     </>)
