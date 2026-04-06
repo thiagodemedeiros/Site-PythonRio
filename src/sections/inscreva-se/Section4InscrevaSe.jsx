@@ -1,6 +1,8 @@
 import '../../styles/inscreva-se/Section4InscrevaSe.css'
 import Button from '../../components/Button'
 
+const LinkParaInscricao = "https://docs.google.com/forms/d/e/1FAIpQLSeUnp1BvUmHX5_GmXj4BQ4lvjCJRgtzUCczLH3Y8BUS83qKUg/closedform";
+
 export default function Section4InscrevaSe() {
     return (<>
         <div className='Section4InscrevaSe_titulo'>
@@ -9,15 +11,15 @@ export default function Section4InscrevaSe() {
 
         <div className="Section4InscrevaSe">
             <div className='Section4InscrevaSe_texto'>
-                <h4>Nesse Dia 10 de Dezembro</h4>
-                <h4>Às 18:00</h4>
-                <h4>Você tem um encontro com a gente no WeWork Bossa Nova Mall</h4>
+                <h4>Nesse Dia 11 de Abril (Sábado)</h4>
+                <h4>Às 14:00</h4>
+                <h4>Você tem um encontro com a gente na Nave do Conhecimento - Engenhão <a href='https://www.instagram.com/naveengenhao/'>(@naveengenhao)</a></h4>
             </div>
         </div>
 
         <div className='Section4InscrevaSe_cta'>
             <h4>Inscreva-se agora no nosso próximo evento!</h4>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWY78hG91ncBOp-x6phFlReOkGjfJpRIeoVM5NddHBjFALlw/viewform" target="_blank">
+            <a href={LinkParaInscricao} target="_blank">
                 <button>Clique aqui e Inscreva-se</button>
             </a>
             <h4>Mas seja rápido, pois temos vagas limitadas!!!</h4>
