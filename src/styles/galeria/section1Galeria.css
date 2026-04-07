@@ -8,3 +8,15 @@
 
     background-color: aliceblue;
 }
+
+.pequenoExibidorDeFotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        width: 25vw;
+        max-width: 400px;
+    }
+}
