@@ -1,0 +1,58 @@
+.FormularioGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    background-color: aliceblue;
+    padding: 30px 50px;
+    border: 2px solid rgb(167, 213, 254);
+    border-radius: 30px;
+
+    & button {
+        margin-top: 30px;
+        padding: 5px 15px;
+        border: 2px solid rgb(167, 213, 254);
+        background-color: aliceblue;
+        border-radius: 20px;
+        font-weight: 700;
+    }
+
+    & input {
+        border: 2px solid rgb(167, 213, 254);
+        border-radius: 10px;
+    }
+}
+
+.EncapsuladorDeImagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 20px 0px 0px 0px;
+
+    & button {
+        margin-top: 10px;
+        padding: 5px 15px;
+        border: 2px solid rgb(167, 213, 254);
+        background-color: aliceblue;
+        border-radius: 20px;
+        font-weight: 400;
+    }
+
+    & h3 {
+        width: 150px;
+        text-align: center;
+    }
+}
+
+.EncapsuladorDeImagens_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}

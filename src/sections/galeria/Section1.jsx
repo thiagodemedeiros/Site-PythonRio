@@ -25,12 +25,13 @@ export default function Section1Galeria() {
     }, [])
 
     return(<div className="Section1Galeria">
+        <div className="Galeria">
         {allDataGaleries && allDataGaleries.map((_ , index) => (
-            <>
-                <h1>NOVA GALERIA</h1>
+            <div className="ItemGaleria">
                 <ExibirDadosDoEvento indexGalerie={index}/>
                 <ExibidorDeFotos indexGalerie={index}/>
-            </>
+            </div>
         ))}
+        </div>
     </div>)
 }

@@ -22,8 +22,8 @@ export default function ExibirDadosDoEvento({indexGalerie}) {
         pegarDadosDoEvento()
     }, [])
 
-    return(<>
+    return(<div className="ExibirDadosDoEvento">
         <h2>{nome}</h2>
         <h2>{descricao}</h2>
-    </>)
+    </div>)
 }

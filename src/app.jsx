@@ -6,6 +6,7 @@ import Sobre from './pages/Sobre';
 import Layout from './layout';
 import PaginaDoPalestrante from './pages/PaginaDoPalestrante'
 import Galeria from './pages/Galeria';
+import Administrativo from './pages/Administrativo';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/inscreva-se' element = {<InscrevaSe/>}/>
             <Route path='/PaginaDoPalestrante/:nome' element = {<PaginaDoPalestrante/>}/>
             <Route path='/galeria' element = {<Galeria/>}/>
+            <Route path='/adm' element = {<Administrativo/>}/>
           </Routes>
         </Layout>
       </Router>

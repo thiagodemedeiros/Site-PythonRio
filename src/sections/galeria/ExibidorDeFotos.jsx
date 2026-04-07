@@ -31,7 +31,7 @@ export default function ExibidorDeFotos({indexGalerie}) {
                         src={photo}
                         alt="Foto"
                     />
-                    <h4>{photo}</h4>
+                    {/* <h4>{photo}</h4> */}
                 </div>
             ))}
         </div>
