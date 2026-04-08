@@ -1,9 +1,20 @@
 import '../../styles/inscreva-se/Section4InscrevaSe.css'
-import Button from '../../components/Button'
-
-const LinkParaInscricao = "https://docs.google.com/forms/d/e/1FAIpQLSeUnp1BvUmHX5_GmXj4BQ4lvjCJRgtzUCczLH3Y8BUS83qKUg/closedform";
+import { useAtom } from "jotai"
+import { inscriptionFormUrlAtom } from "../../jotai/AtomsInscrevaSe";
+import { useEffect } from 'react';
 
 export default function Section4InscrevaSe() {
+    const [ inscriptionFormUrl , _ ] = useAtom(inscriptionFormUrlAtom);
+
+    useEffect(() => {
+        if (inscriptionFormUrl) {
+            console.log("formulario")
+            console.log(inscriptionFormUrl);
+        };
+    }, [inscriptionFormUrl]);
+
+    const LinkParaInscricao = inscriptionFormUrl;
+
     return (<>
         <div className='Section4InscrevaSe_titulo'>
             <h4>Sim!!! O nosso próximo evento já tem data marcada!</h4>

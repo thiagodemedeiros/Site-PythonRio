@@ -1,11 +1,12 @@
 import { useState , useEffect } from "react"
 import { useAtom } from "jotai"
-import { googleIframeAtom } from "../../jotai/AtomsInscrevaSe";
+import { googleIframeAtom , inscriptionFormUrlAtom } from "../../jotai/AtomsInscrevaSe";
 import { supabase } from "../../SupabaseClient";
 
 export default function EventData() {
     const [ allData , SetAllData ] = useState("");
-    const [ googleIframe , setGoogleIframe ] = useAtom(googleIframeAtom);
+    const [ _ , setGoogleIframe ] = useAtom(googleIframeAtom);
+    const [ __ , setInscriptionFormUrl ] = useAtom(inscriptionFormUrlAtom);
 
     async function pegarDadosDoEvento() {
         const { data , error } = await supabase
@@ -15,7 +16,8 @@ export default function EventData() {
             console.error(`error: ${error}`)
             return
         }
-        // console.log(data[0].google_iframe);
+        // console.log();
+        setInscriptionFormUrl(data[0].inscription_form_url)
         setGoogleIframe(data[0].google_iframe);
     }
 

@@ -8,7 +8,7 @@ export default function Section3InscrevaSe() {
 
     const extrairIframe = (iframe) => {
         if (!iframe.includes("width")){
-            console.log("sem src");
+            // console.log("sem src");
             setGoogleIframe(iframe);
             return;
         }
