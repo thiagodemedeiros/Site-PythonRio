@@ -2,15 +2,26 @@ import { useState , useEffect } from "react"
 import { useAtom } from "jotai";
 import { speakersListAtom } from "./AtomsEventForms";
 import { supabase } from "../../../../../SupabaseClient";
+import dayjs from "dayjs";
 import "./adicionarEvento.css"
 
 export default function AddEvent() {
+    const now = dayjs();
     const [ logoImageUrl , setLogoImageUrl ] = useState("");
     const [ iframe , setIframe ] = useState("");
     const [ date , setDate ] = useState("");
     const [ hour , setHour ] = useState("");
     const [ inscriptionFormUrl , setInscriptionFormUrl ] = useState("");
     const [ speakersList , setSpeakersList] = useAtom(speakersListAtom);
+
+    useEffect(() => {
+        setDate(now.format('YYYY-MM-DD'));
+    }, []);
+
+    // useEffect(() => {
+        // console.log("DATA")
+        // console.log(date)
+    // }, [date]);
 
     const resetAllStatesBeforeSendToSupabase = () => {
         setLogoImageUrl("");
@@ -83,7 +94,7 @@ export default function AddEvent() {
             {/* MODIFICAR A DATA PARA MELHOR MANIPULAÇÃO NO BANCO */}
             <div className="AddSpeaker_input">
                 <h3>Digite a data:</h3>
-                <input type="text" onChange={(e) => setDate(e.target.value)} value={date}/>
+                <input type="date" onChange={(e) => setDate(e.target.value)} value={date}/>
             </div>
             <div className="AddSpeaker_input">
                 <h3>Digite a hora:</h3>

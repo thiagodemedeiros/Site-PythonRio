@@ -12,6 +12,7 @@ export default function EventData() {
     const [ ______ , setEventLocalNameAtom ] = useAtom(eventLocalNameAtom);
 
     async function pegarDadosDoEvento() {
+        let indexData;
         const { data , error } = await supabase
                                     .from("events")
                                     .select("*")
@@ -19,13 +20,20 @@ export default function EventData() {
             console.error(`error: ${error}`)
             return
         }
-        console.log(data[0]);
-        setEventLocalNameAtom(data[0].event_local_name);
-        setEventDayAtom(data[0].day);
-        setEventHourAtom(data[0].hour);
-        setEventSponsorLogoUrlImgAtom(data[0].sponsor_logo_img_url);
-        setInscriptionFormUrl(data[0].inscription_form_url)
-        setGoogleIframe(data[0].google_iframe);
+        console.log("TESTE")
+        data.map((d, index) => {
+            console.log(d.day);
+            console.log(index);
+            indexData = index;
+        });
+        console.log("TESTE")
+        console.log(data[indexData]);
+        setEventLocalNameAtom(data[indexData].event_local_name);
+        setEventDayAtom(data[indexData].day);
+        setEventHourAtom(data[indexData].hour);
+        setEventSponsorLogoUrlImgAtom(data[indexData].sponsor_logo_img_url);
+        setInscriptionFormUrl(data[indexData].inscription_form_url)
+        setGoogleIframe(data[indexData].google_iframe);
     }
 
     useEffect(() => {

@@ -7,9 +7,9 @@ import { useEffect } from "react"
 export default function Administrativo() {
     const [ userUuid , setUserUuid ] = useAtom(userUuidAtom)
 
-    useEffect(() => {
-        setUserUuid(null);
-    }, [])
+    // useEffect(() => {
+        // setUserUuid(null);
+    // }, [])
 
     return(<div className="Administrativo">
         <Section1Administrativo/>

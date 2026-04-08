@@ -7,12 +7,12 @@ import { useEffect } from 'react'
 export default function Section1InscrevaSe() {
     const [ eventSponsorLogoUrlImg , _ ] = useAtom(eventSponsorLogoUrlImgAtom);
 
-    useEffect(() => {
-        if (eventSponsorLogoUrlImg) {
-            console.log("Section1InscrevaSe");
-            console.log(eventSponsorLogoUrlImg);
-        }
-    }, [eventSponsorLogoUrlImg])
+    // useEffect(() => {
+        // if (eventSponsorLogoUrlImg) {
+            // console.log("Section1InscrevaSe");
+            // console.log(eventSponsorLogoUrlImg);
+        // }
+    // }, [eventSponsorLogoUrlImg])
 
     return ( <>
         <div className="Section1InscrevaSe">

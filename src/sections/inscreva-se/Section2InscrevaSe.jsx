@@ -8,10 +8,10 @@ import { useEffect } from 'react'
 export default function Section2InscrevaSe() {
     const [ speakersAtomList , _ ] = useAtom(speakersAtom);
 
-    useEffect(() => {
-        console.log("Section2InscrevaSe")
-        console.log(speakersAtomList)
-    }, [speakersAtomList])
+    // useEffect(() => {
+        // console.log("Section2InscrevaSe")
+        // console.log(speakersAtomList)
+    // }, [speakersAtomList])
 
     return(<>
         <div className='Section2InscrevaSe'>
