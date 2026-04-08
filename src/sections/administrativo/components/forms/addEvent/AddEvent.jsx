@@ -80,6 +80,7 @@ export default function AddEvent() {
                 <h3>Cole a url do Iframe do google:</h3>
                 <input type="text" onChange={(e) => setIframe(e.target.value)} value={iframe}/>
             </div>
+            {/* MODIFICAR A DATA PARA MELHOR MANIPULAÇÃO NO BANCO */}
             <div className="AddSpeaker_input">
                 <h3>Digite a data:</h3>
                 <input type="text" onChange={(e) => setDate(e.target.value)} value={date}/>
