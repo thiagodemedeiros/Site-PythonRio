@@ -15,5 +15,5 @@ export const speakersAtom = atom(async () => {
         console.error(`error: ${error}`)
         return
     }
-    return data[1]?.speakers ?? []
+    return data[0]?.speakers ?? []
 });

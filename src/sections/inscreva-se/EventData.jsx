@@ -19,13 +19,13 @@ export default function EventData() {
             console.error(`error: ${error}`)
             return
         }
-        console.log(data[1]);
-        setEventLocalNameAtom(data[1].event_local_name);
-        setEventDayAtom(data[1].day);
-        setEventHourAtom(data[1].hour);
-        setEventSponsorLogoUrlImgAtom(data[1].sponsor_logo_img_url);
-        setInscriptionFormUrl(data[1].inscription_form_url)
-        setGoogleIframe(data[1].google_iframe);
+        console.log(data[0]);
+        setEventLocalNameAtom(data[0].event_local_name);
+        setEventDayAtom(data[0].day);
+        setEventHourAtom(data[0].hour);
+        setEventSponsorLogoUrlImgAtom(data[0].sponsor_logo_img_url);
+        setInscriptionFormUrl(data[0].inscription_form_url)
+        setGoogleIframe(data[0].google_iframe);
     }
 
     useEffect(() => {
