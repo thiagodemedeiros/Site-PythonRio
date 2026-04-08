@@ -1,9 +1,18 @@
 import CardPalestrante from '../../components/CardPalestrante'
-import { Speakers } from '../../../data/speakers/speakers'
 import '../../styles/inscreva-se/Section2InscrevaSe.css'
 import { Link } from 'react-router-dom'
+import { useAtom } from "jotai"
+import { speakersAtom } from "../../jotai/AtomsInscrevaSe";
+import { useEffect } from 'react'
 
 export default function Section2InscrevaSe() {
+    const [ speakersAtomList , _ ] = useAtom(speakersAtom);
+
+    useEffect(() => {
+        console.log("Section2InscrevaSe")
+        console.log(speakersAtomList)
+    }, [speakersAtomList])
+
     return(<>
         <div className='Section2InscrevaSe'>
             <h4 className='Section2InscrevaSe_h4_1'>Com a participação de:</h4>
@@ -13,15 +22,15 @@ export default function Section2InscrevaSe() {
 
                 <div className='Section2InscrevaSe_Cards_Wrap'>
                     
-                    {Speakers.map((speaker, index) => (
+                    {speakersAtomList.map((speaker, index) => (
                         <Link 
                             key = {index}
-                            to = {`/PaginaDoPalestrante/${speaker.nome.toLocaleLowerCase().replaceAll(" ", "-")}`}
+                            to = {`/PaginaDoPalestrante/${speaker.id}`}
                         >
-                            <CardPalestrante key = {speaker.code}
-                                FotoDoPalestrante={speaker.foto}
-                                NomeDoPalestrante={speaker.nome}
-                                TituloDaPalestra={speaker.titulo}/>
+                            <CardPalestrante key = {speaker.index}
+                                FotoDoPalestrante={speaker.speakerPhotoUrl}
+                                NomeDoPalestrante={speaker.speakerName}
+                                TituloDaPalestra={speaker.talkTitle}/>
                         </Link>
                     ))}
                 </div>

@@ -1,15 +1,19 @@
 import '../../styles/inscreva-se/Section4InscrevaSe.css'
 import { useAtom } from "jotai"
-import { inscriptionFormUrlAtom } from "../../jotai/AtomsInscrevaSe";
+import { inscriptionFormUrlAtom , eventDayAtom , eventHourAtom } from "../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react';
 
 export default function Section4InscrevaSe() {
     const [ inscriptionFormUrl , _ ] = useAtom(inscriptionFormUrlAtom);
+    const [ eventDay , __ ] = useAtom(eventDayAtom);
+    const [ eventHour , ___ ] = useAtom(eventHourAtom);
 
     useEffect(() => {
         if (inscriptionFormUrl) {
-            // console.log("formulario")
+            console.log("Section4InscrevaSe")
             console.log(inscriptionFormUrl);
+            console.log(eventDay);
+            console.log(eventHour);
         };
     }, [inscriptionFormUrl]);
 
@@ -22,8 +26,8 @@ export default function Section4InscrevaSe() {
 
         <div className="Section4InscrevaSe">
             <div className='Section4InscrevaSe_texto'>
-                <h4>Nesse Dia 11 de Abril (Sábado)</h4>
-                <h4>Às 14:00</h4>
+                <h4>Nesse Dia {eventDay}</h4>
+                <h4>Às {eventHour}</h4>
                 <h4>Você tem um encontro com a gente na Nave do Conhecimento - Engenhão <a href='https://www.instagram.com/naveengenhao/'>(@naveengenhao)</a></h4>
             </div>
         </div>
