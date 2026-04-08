@@ -12,6 +12,15 @@ export default function AddEvent() {
     const [ inscriptionFormUrl , setInscriptionFormUrl ] = useState("");
     const [ speakersList , setSpeakersList] = useAtom(speakersListAtom);
 
+    const resetAllStatesBeforeSendToSupabase = () => {
+        setLogoImageUrl("");
+        setIframe("");
+        setDate("");
+        setHour("");
+        setInscriptionFormUrl("");
+        setSpeakersList("");
+    };
+
     async function sendNewGalerie(eventName, eventDescription, allImages) {
         extrairIframe(iframe);
         const { data, error } = await supabase
@@ -29,7 +38,8 @@ export default function AddEvent() {
             return
         }
         console.log('Sucess:', data);
-        allData();
+        allData()
+        resetAllStatesBeforeSendToSupabase();
     }
 
     const extrairIframe = (iframe) => {
