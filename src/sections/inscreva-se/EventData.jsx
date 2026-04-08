@@ -2,6 +2,7 @@ import { useState , useEffect } from "react"
 import { useAtom } from "jotai"
 import { googleIframeAtom , inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventSponsorLogoUrlImgAtom , eventLocalNameAtom } from "../../jotai/AtomsInscrevaSe";
 import { supabase } from "../../SupabaseClient";
+import dayjs from "dayjs";
 
 export default function EventData() {
     const [ _ , setGoogleIframe ] = useAtom(googleIframeAtom);
@@ -10,6 +11,7 @@ export default function EventData() {
     const [ ____ , setEventHourAtom ] = useAtom(eventHourAtom);
     const [ _____ , setEventSponsorLogoUrlImgAtom ] = useAtom(eventSponsorLogoUrlImgAtom);
     const [ ______ , setEventLocalNameAtom ] = useAtom(eventLocalNameAtom);
+    const today = dayjs("2026-04-12");
 
     async function pegarDadosDoEvento() {
         let indexData;
@@ -21,11 +23,14 @@ export default function EventData() {
             return
         }
         console.log("TESTE")
-        data.map((d, index) => {
-            console.log(d.day);
-            console.log(index);
-            indexData = index;
+        data.find((d, index) => {
+            if (today.isBefore(dayjs(d.day))) {
+                indexData = index;
+                return true
+            }
         });
+        console.log(indexData)
+        console.log(data);
         console.log("TESTE")
         console.log(data[indexData]);
         setEventLocalNameAtom(data[indexData].event_local_name);
