@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
+import { useAtom } from "jotai";
+import { speakersListAtom } from "./AtomsEventForms";
 
 export default function AddSpeaker() {
     // INFORMAÇÕES DO PALESTRANTE OBRIGATÓRIAS
@@ -14,7 +16,53 @@ export default function AddSpeaker() {
     const [ linkdin , setLinkdin ] = useState("");
     const [ linkdinUrl , setLinkdinUrl ] = useState("");
     // LISTA
-    const [ speakersList , setSpeakerList ] = useState([]);
+    const [ speakersList , setSpeakersList ] = useAtom(speakersListAtom);
+
+    const speakerJson = {
+        speakerName : speakerName,
+        talkTitle : talkTitle,
+        talkDescription : talkDescription,
+        speakerPhotoUrl : speakerPhotoUrl,
+        github : github,
+        githubUrl : githubUrl,
+        instagram : instagram,
+        instagramUrl : instagramUrl,
+        linkdin : linkdin,
+        linkdinUrl : linkdinUrl
+    }
+
+    const resetAllStatesBeforeSendToList = () => {
+        setSpeakerName("");
+        setTalkTitle("");
+        setTalkDescription("");
+        setSpeakerPhotoUrl("");
+        setGithub("");
+        setGithubUrl("");
+        setInstagram("");
+        setInstagramUrl("");
+        setLinkdin("");
+        setLinkdinUrl("");
+    };
+
+    const addSpeakerToList = () => {
+        if (!speakerName || !talkTitle || !talkDescription || !speakerPhotoUrl) {
+            alert("Informações obrigatórias não preenchidas")
+            return
+        }
+        setSpeakersList([...speakersList, speakerJson]);
+        console.log(speakerJson)
+        resetAllStatesBeforeSendToList();
+    };
+
+    const removeSpeakerToList = (speakerIdToRemove) => {
+        setSpeakersList(speakersList.filter(
+            (item, index) => index !== speakerIdToRemove
+        ));
+    };
+
+    useEffect(() => {
+        console.log(speakersList)
+    }, [speakersList]);
 
     return(
     <div className="AddSpeaker">
@@ -71,7 +119,37 @@ export default function AddSpeaker() {
             </div>
         </div>
 
-        <button>Adicionar Palestrante</button>
+        <button onClick={() => addSpeakerToList()}>Adicionar Palestrante</button>
+
+        <div className="SpeakersListDiv">
+            {speakersList.map((speaker, index) => (
+                <div className="SpeakersListDiv_item">
+                    <div className="SpeakersListDiv_item_speaker_infos">
+                        <h4>{speaker.speakerName}</h4>
+                        <h5>{speaker.talkTitle}</h5>
+                        <h5>{speaker.talkDescription}</h5>
+                        <img
+                            src={speaker.speakerPhotoUrl}
+                            alt={`foto de ${speaker.speakerName}`}
+                        />
+                        <a href={speaker.githubUrl} target="_blank">
+                            <h5>{speaker.github}</h5>
+                        </a>
+                        <a href={speaker.instagramUrl} target="_blank">
+                            <h5>{speaker.instagram}</h5>
+                        </a>
+                        <a href={speaker.linkdinUrl} target="_blank">
+                            <h5>{speaker.linkdin}</h5>
+                        </a>
+                    </div>
+                    <button 
+                        onClick={() => removeSpeakerToList(index)}
+                    >
+                        Remover Palestrant
+                    </button>
+                </div>
+            ))}
+        </div>
     </div>
     )
 }

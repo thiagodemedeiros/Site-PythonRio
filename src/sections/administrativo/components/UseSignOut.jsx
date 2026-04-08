@@ -4,11 +4,13 @@ import { useAtom } from "jotai"
 import Forms from "./Forms"
 
 export default function UseSignOut() {
-    const [ _ , setUserUuid] = useAtom(userUuidAtom)
+    const [ userUuid , setUserUuid] = useAtom(userUuidAtom)
 
     async function signOut() {
         await supabase.auth.signOut()
+        console.log(userUuid)
         setUserUuid(null)
+        console.log(userUuid)
     }
 
     return (

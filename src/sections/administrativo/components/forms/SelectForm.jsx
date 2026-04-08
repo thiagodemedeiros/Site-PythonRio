@@ -1,10 +1,10 @@
 import { useState } from "react"
 import FormularioGaleria from "./addGalerie/FormularioGaleria"
-import AdicionarEvento from "./addEvent/AdicionarEvento"
+import EventForms from "./addEvent/EventForms"
 import "./selectForm.css"
 
 export default function SelectForm() {
-    const [ formSelected  , setFormSelected ] = useState("")
+    const [ formSelected  , setFormSelected ] = useState("addEvent")
     let form;
 
     switch (formSelected) {
@@ -12,7 +12,7 @@ export default function SelectForm() {
             form = <FormularioGaleria/>;
             break
         case "addEvent":
-            form = <AdicionarEvento/>;
+            form = <EventForms/>;
             break
     }
 
