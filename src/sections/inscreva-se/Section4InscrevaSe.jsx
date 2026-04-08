@@ -8,7 +8,7 @@ export default function Section4InscrevaSe() {
 
     useEffect(() => {
         if (inscriptionFormUrl) {
-            console.log("formulario")
+            // console.log("formulario")
             console.log(inscriptionFormUrl);
         };
     }, [inscriptionFormUrl]);
