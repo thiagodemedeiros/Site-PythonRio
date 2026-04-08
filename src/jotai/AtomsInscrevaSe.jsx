@@ -6,6 +6,7 @@ export const inscriptionFormUrlAtom = atom(null);
 export const eventDayAtom = atom(null);
 export const eventHourAtom = atom(null);
 export const eventSponsorLogoUrlImgAtom = atom(null);
+export const eventLocalNameAtom = atom(null);
 export const speakersAtom = atom(async () => {
     const { data , error } = await supabase
                                 .from("events")

@@ -23,7 +23,11 @@ export default function Section3InscrevaSe() {
 
     useEffect(() => {
         if (googleIframe) {
+            //console.log("Section3InscrevaSe")
+            //console.log(googleIframe)
             extrairIframe(googleIframe);
+            //console.log("extrairIframe(googleIframe);")
+            //console.log(googleIframe)
         }
     }, [googleIframe]);
 
