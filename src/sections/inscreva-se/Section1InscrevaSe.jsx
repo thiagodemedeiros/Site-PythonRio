@@ -1,5 +1,6 @@
 import '../../styles/inscreva-se/Section1InscrevaSe.css'
 import logo_nave from '../../assets/InscrevaSe/Section1InscrevaSe/logo_nave.png'
+import EventData from './EventData'
 
 export default function Section1InscrevaSe() {
     return ( <>
@@ -11,6 +12,7 @@ export default function Section1InscrevaSe() {
         </div>
         <div className='Section1InscrevaSe_aba'>
             <h4>Apresentamos o nosso próximo evento</h4>
+            <EventData/>
         </div>
     </> )
 }
