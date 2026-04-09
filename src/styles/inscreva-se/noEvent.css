@@ -1,0 +1,17 @@
+.NoEvent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: -50px 0px 0px 0px;
+    height: 320px;
+
+    background-color: rgb(169, 249, 249);
+
+    & h2 {
+        width: 80vw;
+        text-align: center;
+        max-width: 400px;
+    }
+}
