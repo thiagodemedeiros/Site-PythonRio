@@ -10,7 +10,7 @@ export const eventSponsorLogoUrlImgAtom = atom(null);
 export const eventLocalNameAtom = atom(null);
 
 export const speakersAtom = atom(async () => {
-    const today = dayjs("2026-04-12");
+    const today = dayjs();
     let indexData;
     const { data , error } = await supabase
                                 .from("events")

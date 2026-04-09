@@ -11,7 +11,7 @@ export default function EventData() {
     const [ ____ , setEventHourAtom ] = useAtom(eventHourAtom);
     const [ _____ , setEventSponsorLogoUrlImgAtom ] = useAtom(eventSponsorLogoUrlImgAtom);
     const [ ______ , setEventLocalNameAtom ] = useAtom(eventLocalNameAtom);
-    const today = dayjs("2026-04-12");
+    const today = dayjs();
 
     async function pegarDadosDoEvento() {
         let indexData;
