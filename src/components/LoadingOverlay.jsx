@@ -8,3 +8,5 @@ export default function LoadingOverlay() {
     </div>
     )
 }
+
+//enviando tela de carregamento
