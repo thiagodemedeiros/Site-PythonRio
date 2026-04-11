@@ -9,7 +9,7 @@ export default function Cta() {
     const [ inscriptionFormUrl , _ ] = useAtom(inscriptionFormUrlAtom);
     const [ event , setEvent] = useState("Sem evento");
     const [ loading , setLoading ] = useState(true);
-    const today = dayjs();
+    const today = dayjs().add(-1, "day");
 
     async function verificarExistenciaDeEventos() {
         setLoading(true);
