@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 export default function InscrevaSe() {
     const [ event , setEvent] = useState("Sem evento");
     const [ loading , setLoading ] = useState(true);
-    const today = dayjs();
+    const today = dayjs().add(-1, "day");
 
     async function verificarExistenciaDeEventos() {
         setLoading(true);
