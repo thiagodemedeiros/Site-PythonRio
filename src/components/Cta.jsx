@@ -6,7 +6,7 @@ import dayjs from "dayjs";
 import { supabase } from "../SupabaseClient";
 
 export default function Cta() {
-    const [ inscriptionFormUrl , _ ] = useAtom(inscriptionFormUrlAtom);
+    const [ inscriptionFormUrl , setInscriptionFormUrl ] = useAtom(inscriptionFormUrlAtom);
     const [ event , setEvent] = useState("Sem evento");
     const [ loading , setLoading ] = useState(true);
     const today = dayjs();
@@ -21,26 +21,25 @@ export default function Cta() {
             setLoading(false);
             return
         }
-        data.find((d, index) => {
+        const nextEvent = data.find((d, index) => {
             if (today.isBefore(dayjs(d.day))) {
+                // console.log(d)
                 setEvent(index)
                 setLoading(false);
-                return true
+                return d
             }
         });
+        // console.log(nextEvent);
+        setInscriptionFormUrl(nextEvent.inscription_form_url);
         setLoading(false);
     }
     
         useEffect(() => {
-            if (inscriptionFormUrl) {
-                // console.log("formulario-cta")
-                console.log(inscriptionFormUrl);
+            if (!inscriptionFormUrl) {
+                // console.log("verificando eventos")
+                verificarExistenciaDeEventos()
             };
         }, [inscriptionFormUrl]);
-
-        useEffect(() => {
-            verificarExistenciaDeEventos();
-        }, []);
     
         const LinkParaInscricao = inscriptionFormUrl;
     
