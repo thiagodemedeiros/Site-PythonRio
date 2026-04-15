@@ -4,6 +4,7 @@ import "../../styles/galeria/section1Galeria.css"
 
 export default function ExibidorDeFotos({indexGalerie}) {
     const [ allPhotos, setAllPhotos ] = useState()
+    const [ selectedPhoto, setSelectedPhoto ] = useState(null)
 
     async function pegarImagens() {
         const { data , error } = await supabase
@@ -30,10 +31,26 @@ export default function ExibidorDeFotos({indexGalerie}) {
                     <img
                         src={photo}
                         alt="Foto"
+                        onClick={() => setSelectedPhoto(photo)}
                     />
                     {/* <h4>{photo}</h4> */}
                 </div>
             ))}
+
+            {selectedPhoto && (
+                <ModalExibirFotoSelecionada
+                    selectedPhoto={selectedPhoto}
+                    closePhoto={() => setSelectedPhoto(null)}
+                />
+            )}
+        </div>
+    )
+}
+
+function ModalExibirFotoSelecionada({selectedPhoto, closePhoto}) {
+    return(
+        <div className="ModalExibirFotoSelecionada" onClick={closePhoto}>
+            <img src={selectedPhoto} alt="Foto Selecionada" />
         </div>
     )
 }
