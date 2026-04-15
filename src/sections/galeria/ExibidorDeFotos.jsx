@@ -22,7 +22,7 @@ export default function ExibidorDeFotos({indexGalerie}) {
             pegarImagens()
     }, [])
 
-    console.log(allPhotos)
+    // console.log(allPhotos)
 
     return(
         <div className="exibidorDeFotos">
