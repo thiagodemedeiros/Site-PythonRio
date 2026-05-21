@@ -16,6 +16,8 @@ export default function Cta() {
         const { data , error } = await supabase
                                 .from("events")
                                 .select("*")
+        // console.log("CTA: verificando eventos")
+        // console.log(data)
         if (error) {
             console.error(`error: ${error}`)
             setLoading(false);
@@ -29,7 +31,10 @@ export default function Cta() {
                 return d
             }
         });
-        // console.log(nextEvent);
+        if (!nextEvent) {
+            setLoading(false);
+            return
+        }
         setInscriptionFormUrl(nextEvent.inscription_form_url);
         setLoading(false);
     }
