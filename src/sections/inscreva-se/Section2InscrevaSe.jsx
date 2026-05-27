@@ -5,13 +5,28 @@ import { useAtom } from "jotai"
 import { speakersAtom } from "../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react'
 
+const LinkParaFormularioDePalestrantes = "https://docs.google.com/forms/d/e/1FAIpQLSdSsBiiG7k7Q_b4QHXpsmYwOoEPS2dGWXDX0ypVBbjBZajCKw/viewform";
+
 export default function Section2InscrevaSe() {
     const [ speakersAtomList , _ ] = useAtom(speakersAtom);
 
-    // useEffect(() => {
-        // console.log("Section2InscrevaSe")
-        // console.log(speakersAtomList)
-    // }, [speakersAtomList])
+    if (speakersAtomList.length === 0) {
+        return (
+            <div className='Section2InscrevaSe'>
+                <h4 className='Section2InscrevaSe_h4_1'>Clique no botão abaixo e envie sua palestra!</h4>
+                <button
+                    className='Section2InscrevaSe_Button'
+                    onClick={() => window.open(
+                        LinkParaFormularioDePalestrantes,
+                        '_blank',
+                        'noopener,noreferrer'
+                    )}
+                >
+                    Enviar palestra
+                </button>
+            </div>
+        )
+    }
 
     return(<>
         <div className='Section2InscrevaSe'>

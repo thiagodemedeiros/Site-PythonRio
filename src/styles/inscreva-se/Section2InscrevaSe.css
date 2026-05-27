@@ -18,6 +18,19 @@
         color: aliceblue;
         text-align: center;
     }
+
+    & button {
+        width: auto;
+        height: 50px;
+        border-radius: 50px;
+        padding: 0px 40px;
+        cursor: pointer;
+        background: #F3976A;
+        background: linear-gradient(314deg,rgba(240, 118, 123, 1) 0%, rgba(243, 151, 106, 1) 100%);
+        font-weight: 700;
+        font-size: clamp(16px, 3vw, 20px);
+        color: aliceblue;
+    }
 }
 
 .Section2InscrevaSe_Cards {
