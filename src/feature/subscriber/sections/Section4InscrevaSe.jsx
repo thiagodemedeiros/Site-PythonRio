@@ -1,4 +1,4 @@
-import '../../styles/inscreva-se/Section4InscrevaSe.css'
+import './styles/Section4InscrevaSe.css'
 import { useAtom } from "jotai"
 import { inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventLocalNameAtom } from "../../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react';

@@ -1,5 +1,5 @@
 import CardPalestrante from '../../../components/CardPalestrante'
-import '../../styles/inscreva-se/Section2InscrevaSe.css'
+import './styles/Section2InscrevaSe.css'
 import { Link } from 'react-router-dom'
 import { useAtom } from "jotai"
 import { speakersAtom } from "../../../jotai/AtomsInscrevaSe";

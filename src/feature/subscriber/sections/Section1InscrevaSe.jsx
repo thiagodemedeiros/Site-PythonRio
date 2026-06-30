@@ -1,4 +1,4 @@
-import '../../styles/inscreva-se/Section1InscrevaSe.css'
+import './styles/Section1InscrevaSe.css'
 import EventData from './EventData'
 import { useAtom } from 'jotai'
 import { eventSponsorLogoUrlImgAtom } from '../../../jotai/AtomsInscrevaSe'
