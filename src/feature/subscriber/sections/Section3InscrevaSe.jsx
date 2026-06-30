@@ -1,36 +1,11 @@
-import './styles/Section3InscrevaSe.css'
-import { useAtom } from "jotai"
-import { googleIframeAtom } from "../../../jotai/AtomsInscrevaSe";
-import { useEffect } from 'react';
+import { parse } from 'yaml';
+import EventConfigData from "../../../../data/EventConfig.yaml?raw";
+import './styles/Section3InscrevaSe.css';
+
+const EventConfig = parse(EventConfigData).EventConfig;
 
 export default function Section3InscrevaSe() {
-    const [ googleIframe , setGoogleIframe ] = useAtom(googleIframeAtom);
-
-    const extrairIframe = (iframe) => {
-        if (!iframe.includes("width")){
-            // console.log("sem src");
-            setGoogleIframe(iframe);
-            return;
-        }
-        const startTag = iframe.indexOf('src="');
-        const endTag = iframe.indexOf('" width');
-        if (startTag !== -1 && endTag !== -1) {
-            const resultado = iframe.substring(startTag + 5, endTag);
-            setGoogleIframe(resultado);
-            // console.log(resultado)
-        }
-    }
-
-    useEffect(() => {
-        if (googleIframe) {
-            //console.log("Section3InscrevaSe")
-            //console.log(googleIframe)
-            extrairIframe(googleIframe);
-            //console.log("extrairIframe(googleIframe);")
-            //console.log(googleIframe)
-        }
-    }, [googleIframe]);
-
+    console.log(EventConfig.google_iframe)
     return (
         <div className="Section3InscrevaSe">
             <div className='Section3InscrevaSe_titulo'>
@@ -38,7 +13,7 @@ export default function Section3InscrevaSe() {
             </div>
 
             <iframe className='Section3InscrevaSe_mapa'
-                src={googleIframe}
+                src={EventConfig.google_iframe}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

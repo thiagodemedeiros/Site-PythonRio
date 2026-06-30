@@ -1,3 +1,5 @@
+import { parse } from 'yaml';
+import EventConfigData from "../../../../data/EventConfig.yaml?raw";
 import './styles/Section4InscrevaSe.css'
 import { useAtom } from "jotai"
 import { inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventLocalNameAtom } from "../../../jotai/AtomsInscrevaSe";

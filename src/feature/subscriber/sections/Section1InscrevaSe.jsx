@@ -1,16 +1,18 @@
+import { parse } from 'yaml';
+import EventConfigData from "../../../../data/EventConfig.yaml?raw";
 import './styles/Section1InscrevaSe.css'
-import { useAtom } from 'jotai'
-import { eventSponsorLogoUrlImgAtom } from '../../../jotai/AtomsInscrevaSe'
-import { useEffect } from 'react'
+
+const EventConfig = parse(EventConfigData).EventConfig;
 
 export default function Section1InscrevaSe() {
-    const [ eventSponsorLogoUrlImg , _ ] = useAtom(eventSponsorLogoUrlImgAtom);
-
     return ( <>
         <div className="Section1InscrevaSe">
             <div className='Section1InscrevaSe_patrocinio'>
                 <h4>Em parceria com:</h4>
-                <img src={eventSponsorLogoUrlImg} alt={eventSponsorLogoUrlImg} />
+                <img 
+                    src={EventConfig.sponsor_logo} 
+                    alt={`Logo do patrocinador: ${EventConfig.event_sponsor}`}
+                />
             </div>
         </div>
         <div className='Section1InscrevaSe_aba'>
