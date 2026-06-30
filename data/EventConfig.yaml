@@ -1,0 +1,20 @@
+EventConfig:
+  sponsor_logo: "https://i.imgur.com/C2K3yQo.jpeg"
+  event_local_name: "Campus Fiap Botafogo"
+  google_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.182223793246!2d-43.1821876!3d-22.943515199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981090911f4cd%3A0xb47e7804b57c5a96!2sFIAP%20-%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1776039891843!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+  day: 2026-05-16
+  hour: 09:00
+  show_inscription_form: true
+  inscription_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSccrRHQnrfE7ldQLKUOBNExakm1_xLKtrubzIwVSIoJZawFVw/viewform"
+  show_speakers: false
+  speakers:
+  - id: 1
+    github: ""
+    githubUrl: ""
+    linkdin: ""
+    linkdinUrl: ""
+    instagram: ""
+    instagramUrl: ""
+    speakerPhotoUrl: ""
+    talkTitle: ""
+    talkDescription: ""
