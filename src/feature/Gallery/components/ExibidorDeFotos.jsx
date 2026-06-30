@@ -1,29 +1,13 @@
-import { supabase } from "../../../SupabaseClient"
-import { useEffect , useState } from "react"
+import { useState } from "react";
+import GalerieConfigData from "../../../../data/GalerieConfig.yaml?raw";
 import "./sections/section1Galeria.css"
+import { parse } from "yaml";
 
-export default function ExibidorDeFotos({indexGalerie}) {
-    const [ allPhotos, setAllPhotos ] = useState()
-    const [ selectedPhoto, setSelectedPhoto ] = useState(null)
+const GalerieConfig = parse(GalerieConfigData).GalerieConfig;
 
-    async function pegarImagens() {
-        const { data , error } = await supabase
-                                    .from("galerie")
-                                    .select("*")
-        if (error) {
-            console.error(`error: ${error}`)
-            return
-        }
-        setAllPhotos(data[indexGalerie].event_photos.img_link)
-    }
-
-    useEffect(() => {
-        if (!allPhotos)
-            pegarImagens()
-    }, [])
-
-    // console.log(allPhotos)
-
+export default function ExibidorDeFotos({allPhotos}) {
+    const [ selectedPhoto , setSelectedPhoto ] = useState();
+    
     return(
         <div className="exibidorDeFotos">
             { allPhotos && allPhotos.map((photo , index) => (
@@ -33,7 +17,6 @@ export default function ExibidorDeFotos({indexGalerie}) {
                         alt="Foto"
                         onClick={() => setSelectedPhoto(photo)}
                     />
-                    {/* <h4>{photo}</h4> */}
                 </div>
             ))}
 

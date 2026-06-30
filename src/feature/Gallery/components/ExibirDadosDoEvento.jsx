@@ -1,12 +1,9 @@
 import { useState , useEffect } from "react"
 import "./sections/section1Galeria.css"
 
-export default function ExibirDadosDoEvento({indexGalerie}) {
-    const [ nome , setNome] = useState("Nome do Evento");
-    const [ descricao , setDescricao ] = useState("Descrição do Evento");
-
+export default function ExibirDadosDoEvento({name, description}) {
     return(<div className="ExibirDadosDoEvento">
-        <h2>{nome}</h2>
-        <h2>{descricao}</h2>
+        <h2>{name}</h2>
+        <h2>{description}</h2>
     </div>)
 }
