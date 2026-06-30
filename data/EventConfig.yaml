@@ -6,7 +6,7 @@ EventConfig:
   day: 2026-05-16
   hour: 09:00
   show_inscription_form: true
-  inscription_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSccrRHQnrfE7ldQLKUOBNExakm1_xLKtrubzIwVSIoJZawFVw/viewform"
+  inscription_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSdLXC1X56I6_hy6b9zuhDobhVzYo6CCEbgv93sYW8-WJZeElA/viewform"
   show_speakers: false
   speakers:
   - id: 1

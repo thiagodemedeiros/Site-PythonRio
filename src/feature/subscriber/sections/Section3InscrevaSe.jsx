@@ -5,7 +5,6 @@ import './styles/Section3InscrevaSe.css';
 const EventConfig = parse(EventConfigData).EventConfig;
 
 export default function Section3InscrevaSe() {
-    console.log(EventConfig.google_iframe)
     return (
         <div className="Section3InscrevaSe">
             <div className='Section3InscrevaSe_titulo'>

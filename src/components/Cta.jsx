@@ -1,62 +1,33 @@
 import "../styles/components/cta.css"
-import { useAtom } from "jotai"
-import { useEffect , useState } from 'react';
-import { inscriptionFormUrlAtom } from "../jotai/AtomsInscrevaSe";
 import dayjs from "dayjs";
-import { supabase } from "../SupabaseClient";
+import { parse } from 'yaml';
+import EventConfigData from "../../data/EventConfig.yaml?raw";
+import { useEffect, useState } from "react";
+
+const EventConfig = parse(EventConfigData).EventConfig;
 
 export default function Cta() {
-    const [ inscriptionFormUrl , setInscriptionFormUrl ] = useAtom(inscriptionFormUrlAtom);
-    const [ event , setEvent] = useState("Sem evento");
+    const [ hasEvent , setHasEvent] = useState(false);
     const [ loading , setLoading ] = useState(true);
     const today = dayjs().add(-1, "day");
+    const eventDay = dayjs(EventConfig.day);
 
-    async function verificarExistenciaDeEventos() {
-        setLoading(true);
-        const { data , error } = await supabase
-                                .from("events")
-                                .select("*")
-        // console.log("CTA: verificando eventos")
-        // console.log(data)
-        if (error) {
-            console.error(`error: ${error}`)
-            setLoading(false);
-            return
+    useEffect(() => {
+        if (eventDay.isAfter(today)) {
+            setHasEvent(true);
         }
-        const nextEvent = data.find((d, index) => {
-            if (today.isBefore(dayjs(d.day))) {
-                // console.log(d)
-                setEvent(index)
-                setLoading(false);
-                return d
-            }
-        });
-        if (!nextEvent) {
-            setLoading(false);
-            return
-        }
-        setInscriptionFormUrl(nextEvent.inscription_form_url);
         setLoading(false);
-    }
-    
-        useEffect(() => {
-            if (!inscriptionFormUrl) {
-                // console.log("verificando eventos")
-                verificarExistenciaDeEventos()
-            };
-        }, [inscriptionFormUrl]);
-    
-        const LinkParaInscricao = inscriptionFormUrl;
-    
+    }, [])
+
     return (
         <>
             <div className="cta">
                 {loading ? (
                     <h4>...Carregando...</h4>
-                ) : event !== "Sem evento" ? (
+                ) : !hasEvent ? (
                     <>
                     <h4>O nosso próximo evento já tem data marcada!</h4>
-                    <a href={LinkParaInscricao} target="_blank">
+                    <a href={EventConfig.inscription_form_url} target="_blank">
                         <button>INSCREVA-SE NO NOSSO PRÓXIMO EVENTO</button>
                     </a>
                     </>
