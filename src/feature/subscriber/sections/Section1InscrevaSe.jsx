@@ -1,5 +1,4 @@
 import './styles/Section1InscrevaSe.css'
-import EventData from './EventData'
 import { useAtom } from 'jotai'
 import { eventSponsorLogoUrlImgAtom } from '../../../jotai/AtomsInscrevaSe'
 import { useEffect } from 'react'
@@ -16,7 +15,6 @@ export default function Section1InscrevaSe() {
         </div>
         <div className='Section1InscrevaSe_aba'>
             <h4>Apresentamos o nosso próximo evento</h4>
-            <EventData/>
         </div>
     </> )
 }

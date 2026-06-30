@@ -1,8 +1,8 @@
-import ExibidorDeFotos from "./ExibidorDeFotos"
-import ExibirDadosDoEvento from "./ExibirDadosDoEvento"
+import ExibidorDeFotos from "../ExibidorDeFotos"
+import ExibirDadosDoEvento from "../ExibirDadosDoEvento"
 import { useEffect , useState } from "react"
-import { supabase } from "../../SupabaseClient"
-import "../../styles/galeria/section1Galeria.css"
+import { supabase } from "../../../../SupabaseClient"
+import "./section1Galeria.css"
 
 export default function Section1Galeria() {
     const [ allDataGaleries , setAllDataGaleries] = useState(null)

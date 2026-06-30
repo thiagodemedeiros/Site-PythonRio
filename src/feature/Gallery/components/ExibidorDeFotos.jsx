@@ -1,6 +1,6 @@
-import { supabase } from "../../SupabaseClient"
+import { supabase } from "../../../SupabaseClient"
 import { useEffect , useState } from "react"
-import "../../styles/galeria/section1Galeria.css"
+import "./sections/section1Galeria.css"
 
 export default function ExibidorDeFotos({indexGalerie}) {
     const [ allPhotos, setAllPhotos ] = useState()

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Layout from './layout';
-import PaginaDoPalestrante from './pages/PaginaDoPalestrante'
-import Galeria from './pages/Galeria';
+import PaginaDoPalestrante from './pages/PaginaDoPalestrante';
 import LoadingOverlay from './components/LoadingOverlay';
 import { Subscriber } from './feature/subscriber';
+import { Gallery } from './feature/Gallery/Gallery';
 
 function App() {
   const [ loading , setLoading ] = useState(true)
@@ -31,7 +31,7 @@ function App() {
             <Route path='/sobre' element={<Sobre />} />
             <Route path='/inscreva-se' element={<Subscriber />} />
             <Route path='/PaginaDoPalestrante/:id' element={<PaginaDoPalestrante />} />
-            <Route path='/galeria' element={<Galeria />} />
+            <Route path='/galeria' element={<Gallery />} />
           </Routes>
         </Layout>
       </Router>
