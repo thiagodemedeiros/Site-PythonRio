@@ -1,6 +1,6 @@
 import '../../styles/inscreva-se/Section3InscrevaSe.css'
 import { useAtom } from "jotai"
-import { googleIframeAtom } from "../../jotai/AtomsInscrevaSe";
+import { googleIframeAtom } from "../../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react';
 
 export default function Section3InscrevaSe() {

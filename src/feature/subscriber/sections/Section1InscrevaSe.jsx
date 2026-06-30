@@ -1,18 +1,11 @@
 import '../../styles/inscreva-se/Section1InscrevaSe.css'
 import EventData from './EventData'
 import { useAtom } from 'jotai'
-import { eventSponsorLogoUrlImgAtom } from '../../jotai/AtomsInscrevaSe'
+import { eventSponsorLogoUrlImgAtom } from '../../../jotai/AtomsInscrevaSe'
 import { useEffect } from 'react'
 
 export default function Section1InscrevaSe() {
     const [ eventSponsorLogoUrlImg , _ ] = useAtom(eventSponsorLogoUrlImgAtom);
-
-    // useEffect(() => {
-        // if (eventSponsorLogoUrlImg) {
-            // console.log("Section1InscrevaSe");
-            // console.log(eventSponsorLogoUrlImg);
-        // }
-    // }, [eventSponsorLogoUrlImg])
 
     return ( <>
         <div className="Section1InscrevaSe">

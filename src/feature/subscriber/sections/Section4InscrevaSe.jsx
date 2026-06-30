@@ -1,6 +1,6 @@
 import '../../styles/inscreva-se/Section4InscrevaSe.css'
 import { useAtom } from "jotai"
-import { inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventLocalNameAtom } from "../../jotai/AtomsInscrevaSe";
+import { inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventLocalNameAtom } from "../../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react';
 import dayjs from "dayjs";
 import "dayjs/locale/pt-br";

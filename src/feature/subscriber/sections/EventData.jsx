@@ -1,7 +1,7 @@
 import { useState , useEffect } from "react"
 import { useAtom } from "jotai"
-import { googleIframeAtom , inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventSponsorLogoUrlImgAtom , eventLocalNameAtom } from "../../jotai/AtomsInscrevaSe";
-import { supabase } from "../../SupabaseClient";
+import { googleIframeAtom , inscriptionFormUrlAtom , eventDayAtom , eventHourAtom , eventSponsorLogoUrlImgAtom , eventLocalNameAtom } from "../../../jotai/AtomsInscrevaSe";
+import { supabase } from "../../../SupabaseClient";
 import dayjs from "dayjs";
 
 export default function EventData() {

@@ -1,5 +1,5 @@
 import "../styles/PaginaDoPalestrante/PaginaDoPalestrante.css"
-import { Speakers } from '../../data/speakers/speakers'
+// import { Speakers } from '../../data/speakers/speakers'
 import { useParams } from "react-router-dom"
 import { useAtom } from "jotai"
 import { speakersAtom } from "../jotai/AtomsInscrevaSe"

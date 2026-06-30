@@ -1,8 +1,8 @@
-import CardPalestrante from '../../components/CardPalestrante'
+import CardPalestrante from '../../../components/CardPalestrante'
 import '../../styles/inscreva-se/Section2InscrevaSe.css'
 import { Link } from 'react-router-dom'
 import { useAtom } from "jotai"
-import { speakersAtom } from "../../jotai/AtomsInscrevaSe";
+import { speakersAtom } from "../../../jotai/AtomsInscrevaSe";
 import { useEffect } from 'react'
 
 const LinkParaFormularioDePalestrantes = "https://docs.google.com/forms/d/e/1FAIpQLSdSsBiiG7k7Q_b4QHXpsmYwOoEPS2dGWXDX0ypVBbjBZajCKw/viewform";
