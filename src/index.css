@@ -21,3 +21,7 @@ a {
 button {
     border: none;
 }
+
+body {
+    background-color: black;
+}
