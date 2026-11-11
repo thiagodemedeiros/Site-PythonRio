@@ -55,36 +55,3 @@
     gap: 120px;
     width: 60vw;
 }
-
-.Section2InscrevaSe_h4_Cards_1 {
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 1s ease;
-
-    height: 0px;
-    width: 60vw;
-    max-width: 350px;
-    text-align: center;
-    margin-top: -80px;
-}
-
-.Section2InscrevaSe_Cards:hover {
-
-    & .Section2InscrevaSe_h4_Cards_1 {
-        margin-top: 0px;
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-
-        font-size: 24px;
-        width: 60vw;
-        max-width: 350px;
-        color: aliceblue;
-
-        text-align: center;
-        margin-top: -20px;
-        margin-bottom: -50px;
-        height: auto;
-    }
-}

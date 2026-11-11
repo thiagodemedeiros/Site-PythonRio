@@ -1,13 +1,13 @@
 EventConfig:
   sponsor_logo: "https://i.imgur.com/C2K3yQo.jpeg"
   event_sponsor: Fiap
-  event_local_name: "Campus Fiap Botafogo"
-  google_iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.182223793246!2d-43.1821876!3d-22.943515199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981090911f4cd%3A0xb47e7804b57c5a96!2sFIAP%20-%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1776039891843!5m2!1spt-BR!2sbr"
-  day: 2026-05-16
-  hour: 09:00
+  event_local_name: "Campus Regional Instituto Politécnico - IPRJ"
+  google_iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.778533176258!2d-42.5413868!3d-22.2863776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a8f677f134d%3A0x8815a56c0c2b462d!2sIPRJ%2FUERJ%20-%20Campus%20Regional%20Instituto%20Polit%C3%A9cnico!5e0!3m2!1spt-BR!2sbr!4v1794403763384!5m2!1spt-BR!2sbr"
+  day: 2026-11-28
+  hour: "09:00"
   show_inscription_form: true
-  inscription_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSdLXC1X56I6_hy6b9zuhDobhVzYo6CCEbgv93sYW8-WJZeElA/viewform"
-  show_speakers: false
+  inscription_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSe99rLGSQuTelLUBw_XOH7tytRKEBv1rSZ6goHL5BZt0UpAww/viewform"
+  show_speakers: true
   speakers:
   - id: 1
     github: ""
@@ -16,7 +16,64 @@ EventConfig:
     linkdinUrl: ""
     instagram: ""
     instagramUrl: ""
-    speakerName: ""
-    speakerPhotoUrl: ""
-    talkTitle: ""
-    talkDescription: ""
+    speakerName: "Carolina Bratos"
+    speakerPhotoUrl: https://i.imgur.com/ziQUBkM.png
+    talkTitle: 'Desmistificando o "eu não sirvo pra codar"'
+    talkDescription: |
+      Como uma profissional formada em Processos Gerenciais, que não sabia o que era front ou back-end, conseguiu se destacar entre 21.000 inscritos, gabaritar provas de lógica e conquistar uma vaga efetiva de desenvolvimento em meio à gestação?
+
+      Nesta palestra inspiradora, vou compartilhar os bastidores da minha transição radical de carreira de 10 anos atuando em diversas áreas de administração para a Engenharia de Software, o choque com a síndrome da impostora e como a bagagem prévia em gestão e raciocínio lógico se tornou a chave para romper no mundo da tecnologia. Mais do que uma história de superação, é um convite realista e encorajador para que mais pessoas — especialmente mulheres e mães — acreditem que a tecnologia também é o seu lugar. Venha ouvir sobre resiliência, disciplina e como transformar desafios em código e carreira.
+  - id: 2
+    github: ""
+    githubUrl: ""
+    linkdin: ""
+    linkdinUrl: ""
+    instagram: ""
+    instagramUrl: ""
+    speakerName: "Luciano Ratamero"
+    speakerPhotoUrl: https://i.imgur.com/CpHQyrB.jpeg
+    talkTitle: 'Frontends modernos com django-vite'
+    talkDescription: |
+      Uma das partes mais criticadas do Django é sua parte de frontend, vista como defasada, ou pouco flexível. Para resolver isso, em geral os times acabam usando um frontend separado, em outro projeto/repositório, deixando o Django apenas como API; mas isso é custoso, e cria não só retrabalho, como burocracia na gestão de tarefas.
+      
+      Essa paletra mostrará como usar o django-vite, que é uma biblioteca que traz a facilidade de se utilizar qualquer framework ou biblioteca de frontend diretamente em um projeto Django.
+  - id: 3
+    github: ""
+    githubUrl: ""
+    linkdin: ""
+    linkdinUrl: ""
+    instagram: ""
+    instagramUrl: ""
+    speakerName: "Ágata de Lima"
+    speakerPhotoUrl: https://i.imgur.com/ZCnx0wi.png
+    talkTitle: 'Do PDF ao dado estruturado'
+    talkDescription: |
+      Quase toda empresa tem informação importante presa em PDFs, planilhas e documentos Word, e alguém copiando e colando tudo à mão. Nesta palestra, vou mostrar como construir em Python um pipeline que recebe esses arquivos e entrega dados estruturados e validados, usando um LLM como ""interpretador"".
+
+      Vamos passar pelas etapas reais do processo: extrair o texto de cada formato, lidar com o limite de contexto, pedir ao modelo uma saída em formato definido, validar com Pydantic e tratar os erros que aparecem na prática. O foco é compartilhar o que aprendi construindo isso em um projeto real, incluindo o que deu errado, para que quem assistir saia com um caminho claro para fazer o mesmo.
+  - id: 4
+    github: ""
+    githubUrl: ""
+    linkdin: ""
+    linkdinUrl: ""
+    instagram: ""
+    instagramUrl: ""
+    speakerName: "Roberto Araujo"
+    speakerPhotoUrl: https://i.imgur.com/IgN0Ffp.jpeg
+    talkTitle: 'WebMCP: ensinando a Web a conversar com agentes de IA'
+    talkDescription: |
+      E se os sites pudessem conversar diretamente com agentes de IA?
+
+      O WebMCP traz uma nova forma de conectar a Web à inteligência artificial, permitindo que aplicações exponham suas próprias funcionalidades como ferramentas que agentes podem descobrir e executar. Nesta palestra, vamos entender como isso funciona, por que pode mudar a forma como agentes interagem com a Web e, claro, ver tudo acontecendo em uma **demo ao vivo**.
+  - id: 5
+    github: ""
+    githubUrl: ""
+    linkdin: ""
+    linkdinUrl: ""
+    instagram: ""
+    instagramUrl: ""
+    speakerName: "Gabriel Rodrigues"
+    speakerPhotoUrl: https://i.imgur.com/wiqCOgu.jpeg
+    talkTitle: 'Relatividade Geral e Python'
+    talkDescription: |
+      No meio acadêmico, é notável a dependência de softwares proprietários e licenças pagas em áreas que exigem cálculos computacionais robustos. Esta palestra vem mostrar como podemos utilizar o Python e todo o seu ecossistema como uma alternativa gratuita e acessível, focando na experiência prática de aplicação no estudo da Relatividade Geral.

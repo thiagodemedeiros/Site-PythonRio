@@ -1,17 +1,18 @@
 import "../styles/PaginaDoPalestrante/PaginaDoPalestrante.css"
-// import { Speakers } from '../../data/speakers/speakers'
+import AllSpeakerData from "../../data/EventConfig.yaml?raw";
+import { parse } from "yaml";
 import { useParams } from "react-router-dom"
-import { useAtom } from "jotai"
-import { speakersAtom } from "../jotai/AtomsInscrevaSe"
 import { useEffect } from 'react'
 import logo_github from '/redes_logos/github-logo.png'
 import logo_instagram from '/redes_logos/instagram-logo.png'
 import logo_linkdin from '/redes_logos/linkdin-logo.png'
 
+const SpeakerData = parse(AllSpeakerData).EventConfig.speakers;
+
 export default function PaginaDoPalestrante() {
     const { id } = useParams();
-    const [ speakersAtomList , _ ] = useAtom(speakersAtom);
-    const speaker = speakersAtomList.find(
+    console.log(SpeakerData)
+    const speaker = SpeakerData.find(
         (s) => s.id == id
     );
 

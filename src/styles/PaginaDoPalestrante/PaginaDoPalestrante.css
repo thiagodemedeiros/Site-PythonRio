@@ -30,7 +30,7 @@
 .PaginaDoPalestrante_card_titulo {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
 

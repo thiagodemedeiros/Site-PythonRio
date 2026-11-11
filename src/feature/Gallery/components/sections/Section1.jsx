@@ -1,8 +1,6 @@
 import ExibidorDeFotos from "../ExibidorDeFotos"
 import GalerieConfigData from "../../../../../data/GalerieConfig.yaml?raw";
 import ExibirDadosDoEvento from "../ExibirDadosDoEvento"
-import { useEffect , useState } from "react"
-import { supabase } from "../../../../SupabaseClient"
 import { parse } from "yaml";
 import "./section1Galeria.css"
 
