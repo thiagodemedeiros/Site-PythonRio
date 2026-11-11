@@ -77,3 +77,17 @@ EventConfig:
     talkTitle: 'Relatividade Geral e Python'
     talkDescription: |
       No meio acadêmico, é notável a dependência de softwares proprietários e licenças pagas em áreas que exigem cálculos computacionais robustos. Esta palestra vem mostrar como podemos utilizar o Python e todo o seu ecossistema como uma alternativa gratuita e acessível, focando na experiência prática de aplicação no estudo da Relatividade Geral.
+  - id: 6
+    github: ""
+    githubUrl: ""
+    linkdin: "Fernando Almeida"
+    linkdinUrl: "https://www.linkedin.com/in/fernando-almeida-a0956a134"
+    instagram: ""
+    instagramUrl: ""
+    speakerName: "Fernando Almeida"
+    speakerPhotoUrl: https://i.imgur.com/3JzFQbM.jpeg
+    talkTitle: 'Consumindo APIs REST na Prática'
+    talkDescription: |
+      Quando aprendemos a programar, os primeiros passos costumam se limitar a entradas de texto manuais e saídas no terminal. No entanto, o verdadeiro poder do desenvolvimento de software surge quando nossas aplicações passam a se comunicar com o mundo exterior. Nesta palestra prática e direta, vamos explorar como transformar scripts isolados em soluções conectadas utilizando Python e a biblioteca requests para consumir serviços web reais.
+
+      A partir do caso prático de consulta ao ViaCEP, passaremos pela anatomy de uma requisição HTTP, manipulação de dados em formato JSON, modularização por meio de funções e tratamento básico de retornos. Uma visão acessível e essencial para quem deseja dar os primeiros passos na integração de APIs, entender a dinâmica de comunicação client-server e aplicar esses conceitos na construção de softwares mais inteligentes e automatizados.
